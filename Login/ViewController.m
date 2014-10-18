@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Parse/Parse.h>
 
 @interface ViewController ()
 
@@ -16,7 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.usernameField becomeFirstResponder];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)forgotPassword:(id)sender {
+}
+
+- (IBAction)logIn:(id)sender {
+}
+
+- (IBAction)signUp:(id)sender {
+}
+
+-(void)tapRecog{
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+}
 @end

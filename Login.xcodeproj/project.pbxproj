@@ -14,6 +14,18 @@
 		D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7807C4019F1F8CD0082A3DE /* Images.xcassets */; };
 		D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7807C4219F1F8CD0082A3DE /* LaunchScreen.xib */; };
 		D7807C5019F1F8CD0082A3DE /* LoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C4F19F1F8CD0082A3DE /* LoginTests.m */; };
+		D7807C5B19F1F9D30082A3DE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C5919F1F9D30082A3DE /* Bolts.framework */; };
+		D7807C5C19F1F9D30082A3DE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C5A19F1F9D30082A3DE /* Parse.framework */; };
+		D7807C7119F1FA270082A3DE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C5D19F1FA150082A3DE /* AudioToolbox.framework */; };
+		D7807C7219F1FA270082A3DE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C5E19F1FA150082A3DE /* CFNetwork.framework */; };
+		D7807C7319F1FA270082A3DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C5F19F1FA150082A3DE /* CoreGraphics.framework */; };
+		D7807C7419F1FA270082A3DE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6019F1FA150082A3DE /* CoreLocation.framework */; };
+		D7807C7519F1FA270082A3DE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6119F1FA150082A3DE /* libz.dylib */; };
+		D7807C7619F1FA270082A3DE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6219F1FA150082A3DE /* MobileCoreServices.framework */; };
+		D7807C7719F1FA270082A3DE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6319F1FA150082A3DE /* QuartzCore.framework */; };
+		D7807C7819F1FA270082A3DE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6419F1FA150082A3DE /* Security.framework */; };
+		D7807C7919F1FA270082A3DE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6519F1FA150082A3DE /* StoreKit.framework */; };
+		D7807C7A19F1FA270082A3DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6619F1FA150082A3DE /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,18 @@
 		D7807C4919F1F8CD0082A3DE /* LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7807C4E19F1F8CD0082A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7807C4F19F1F8CD0082A3DE /* LoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTests.m; sourceTree = "<group>"; };
+		D7807C5919F1F9D30082A3DE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		D7807C5A19F1F9D30082A3DE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		D7807C5D19F1FA150082A3DE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D7807C5E19F1FA150082A3DE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D7807C5F19F1FA150082A3DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7807C6019F1FA150082A3DE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D7807C6119F1FA150082A3DE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		D7807C6219F1FA150082A3DE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D7807C6319F1FA150082A3DE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7807C6419F1FA150082A3DE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D7807C6519F1FA150082A3DE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		D7807C6619F1FA150082A3DE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +71,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7807C7119F1FA270082A3DE /* AudioToolbox.framework in Frameworks */,
+				D7807C7219F1FA270082A3DE /* CFNetwork.framework in Frameworks */,
+				D7807C7319F1FA270082A3DE /* CoreGraphics.framework in Frameworks */,
+				D7807C7419F1FA270082A3DE /* CoreLocation.framework in Frameworks */,
+				D7807C7519F1FA270082A3DE /* libz.dylib in Frameworks */,
+				D7807C7619F1FA270082A3DE /* MobileCoreServices.framework in Frameworks */,
+				D7807C7719F1FA270082A3DE /* QuartzCore.framework in Frameworks */,
+				D7807C7819F1FA270082A3DE /* Security.framework in Frameworks */,
+				D7807C7919F1FA270082A3DE /* StoreKit.framework in Frameworks */,
+				D7807C7A19F1FA270082A3DE /* SystemConfiguration.framework in Frameworks */,
+				D7807C5C19F1F9D30082A3DE /* Parse.framework in Frameworks */,
+				D7807C5B19F1F9D30082A3DE /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +132,18 @@
 		D7807C3319F1F8CD0082A3DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D7807C5D19F1FA150082A3DE /* AudioToolbox.framework */,
+				D7807C5E19F1FA150082A3DE /* CFNetwork.framework */,
+				D7807C5F19F1FA150082A3DE /* CoreGraphics.framework */,
+				D7807C6019F1FA150082A3DE /* CoreLocation.framework */,
+				D7807C6119F1FA150082A3DE /* libz.dylib */,
+				D7807C6219F1FA150082A3DE /* MobileCoreServices.framework */,
+				D7807C6319F1FA150082A3DE /* QuartzCore.framework */,
+				D7807C6419F1FA150082A3DE /* Security.framework */,
+				D7807C6519F1FA150082A3DE /* StoreKit.framework */,
+				D7807C6619F1FA150082A3DE /* SystemConfiguration.framework */,
+				D7807C5919F1F9D30082A3DE /* Bolts.framework */,
+				D7807C5A19F1F9D30082A3DE /* Parse.framework */,
 				D7807C3419F1F8CD0082A3DE /* Info.plist */,
 				D7807C3519F1F8CD0082A3DE /* main.m */,
 			);
@@ -343,6 +391,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Login",
+				);
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +405,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Login",
+				);
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
