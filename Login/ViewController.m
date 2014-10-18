@@ -15,6 +15,18 @@
 
 @implementation ViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    if([PFUser currentUser]){
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    
+    self.logInButton.userInteractionEnabled = YES;
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    self.usernameField.text = @"";
+    self.passwordField.text = @"";
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -22,17 +34,59 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
     [self.view addGestureRecognizer:tap];
+    
+   // self.logInButton.userInteractionEnabled = NO;
+    self.passwordField.delegate = self;
+    
 }
-
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    NSLog(@"here with %s\n",[[textField description]UTF8String]);
+    if(textField.tag == 2 && textField.text.length > 3){
+        self.logInButton.userInteractionEnabled = YES;
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)forgotPassword:(id)sender {
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Reset Password" message:@"Enter your email" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Submit",nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 1){
+        NSString *email = [alertView textFieldAtIndex:0].text;
+        [PFUser requestPasswordResetForEmailInBackground:email];
+    }
 }
 
 - (IBAction)logIn:(id)sender {
+    self.logInButton.userInteractionEnabled = NO;
+    
+    [PFUser logInWithUsernameInBackground:self.usernameField.text password:self.passwordField.text
+                                    block:^(PFUser *user, NSError *error) {
+                                        
+                                        if (user) {
+                                            //[self performSegueWithIdentifier:@"logIn" sender:self];
+                                            
+                                            [self dismissViewControllerAnimated:NO completion:nil];
+                                        } else {
+                                            CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+                                            anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
+                                            anim.autoreverses = YES ;
+                                            anim.repeatCount = 2.0f ;
+                                            anim.duration = 0.07f ;
+                                            
+                                            
+                                            [ self.passwordField.layer addAnimation:anim forKey:nil ] ;
+                                            
+                                        }
+                                    }];
+    
 }
 
 - (IBAction)signUp:(id)sender {
