@@ -40,7 +40,7 @@
     
 }
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    NSLog(@"here with %s\n",[[textField description]UTF8String]);
+    //NSLog(@"here with %s\n",[[textField description]UTF8String]);
     if(textField.tag == 2 && textField.text.length > 3){
         self.logInButton.userInteractionEnabled = YES;
     }

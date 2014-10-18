@@ -28,6 +28,7 @@
 		D7807C7A19F1FA270082A3DE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7807C6619F1FA150082A3DE /* SystemConfiguration.framework */; };
 		D7807C7D19F201710082A3DE /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C7C19F201710082A3DE /* UserDetailsViewController.m */; };
 		D7807C8019F204910082A3DE /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C7F19F204910082A3DE /* SignUpViewController.m */; };
+		D7807C8519F302ED0082A3DE /* SchoolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		D7807C7C19F201710082A3DE /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDetailsViewController.m; path = ../UserDetailsViewController.m; sourceTree = "<group>"; };
 		D7807C7E19F204910082A3DE /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = ../SignUpViewController.h; sourceTree = "<group>"; };
 		D7807C7F19F204910082A3DE /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
+		D7807C8319F302ED0082A3DE /* SchoolsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchoolsTableViewController.h; path = ../SchoolsTableViewController.h; sourceTree = "<group>"; };
+		D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SchoolsTableViewController.m; path = ../SchoolsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				D7807C3B19F1F8CD0082A3DE /* ViewController.m */,
 				D7807C7E19F204910082A3DE /* SignUpViewController.h */,
 				D7807C7F19F204910082A3DE /* SignUpViewController.m */,
+				D7807C8319F302ED0082A3DE /* SchoolsTableViewController.h */,
+				D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */,
 				D7807C3D19F1F8CD0082A3DE /* Main.storyboard */,
 				D7807C4019F1F8CD0082A3DE /* Images.xcassets */,
 				D7807C4219F1F8CD0082A3DE /* LaunchScreen.xib */,
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */,
+				D7807C8519F302ED0082A3DE /* SchoolsTableViewController.m in Sources */,
 				D7807C8019F204910082A3DE /* SignUpViewController.m in Sources */,
 				D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */,
 				D7807C7D19F201710082A3DE /* UserDetailsViewController.m in Sources */,

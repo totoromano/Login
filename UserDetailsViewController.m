@@ -25,6 +25,14 @@
     self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
     self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
     self.idLabel.text = [[PFUser currentUser] objectId];
+    
+    NSArray *follows = [PFUser currentUser][@"follows"];
+    NSString *content = @"";
+    
+    for(int i =0; i < follows.count; i ++){
+        content = [content stringByAppendingString:[NSString stringWithFormat:@"%@ \n",[follows objectAtIndex:i]]];
+    }
+    self.followsLabel.text = content;
 }
 
 - (void)viewDidLoad {
