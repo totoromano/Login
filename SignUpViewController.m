@@ -38,12 +38,10 @@
 */
 
 - (IBAction)signUp:(id)sender {
-    
     PFUser *user = [PFUser user];
     user.username = self.usernameField.text;
     user.password = self.passwordField.text;
     user.email = self.emailField.text;
-    
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             [self dismissViewControllerAnimated:NO completion:nil];
@@ -65,5 +63,4 @@
     [self.passwordField resignFirstResponder];
     [self.emailField resignFirstResponder];
 }
-
 @end

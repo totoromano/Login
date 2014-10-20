@@ -16,8 +16,7 @@
 - (IBAction)forgotPassword:(id)sender;
 - (IBAction)logIn:(id)sender;
 - (IBAction)signUp:(id)sender;
-
--(void)tapRecog;
+- (void)tapRecog;
 
 @end
 

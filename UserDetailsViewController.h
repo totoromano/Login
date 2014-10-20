@@ -10,10 +10,9 @@
 #import "ViewController.h"
 
 @interface UserDetailsViewController : UIViewController
-- (IBAction)logOut:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *emailLabel;
 @property (weak, nonatomic) IBOutlet UILabel *idLabel;
 @property (weak, nonatomic) IBOutlet UILabel *followsLabel;
-
+- (IBAction)logOut:(id)sender;
 @end

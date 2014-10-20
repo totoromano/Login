@@ -15,7 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 - (IBAction)signUp:(id)sender;
 - (IBAction)cancel:(id)sender;
-
--(void)tapRecog;
+- (void)tapRecog;
 
 @end

@@ -15,11 +15,9 @@
 
 @implementation UserDetailsViewController
 -(void)viewDidAppear:(BOOL)animated{
-    
     if(![PFUser currentUser]){
         [self performSegueWithIdentifier:@"RequestLogIn" sender:self];
     }
-    
 }
 -(void)viewWillAppear:(BOOL)animated{
     self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
@@ -37,11 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
-    
+    //NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
     // Do any additional setup after loading the view.
 }
 
