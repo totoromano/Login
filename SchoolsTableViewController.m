@@ -23,9 +23,14 @@
     schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
     
     userFollows = [PFUser currentUser][@"follows"];
+    printf("reloading table \n");
+    [self.tableView reloadData];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -52,6 +57,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     if([tableView cellForRowAtIndexPath:indexPath].textLabel.textColor != [UIColor redColor]){
         [tableView cellForRowAtIndexPath:indexPath].textLabel.textColor = [UIColor redColor];
         NSLog(@"Selected: %s\n", [[tableView cellForRowAtIndexPath:indexPath].textLabel.text UTF8String]   );
@@ -72,6 +78,8 @@
     
     if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
         cell.textLabel.textColor = [UIColor redColor];
+    }else{
+        cell.textLabel.textColor = [UIColor blackColor];
     }
     
     cell.textLabel.text = [schools objectAtIndex:indexPath.row][@"Name"];
