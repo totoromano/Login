@@ -33,17 +33,16 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
     [self.view addGestureRecognizer:tap];
     
-   // self.logInButton.userInteractionEnabled = NO;
     self.passwordField.delegate = self;
     
 }
 /*
-- (void)textFieldDidBeginEditing:(UITextField *)textField{
-    //NSLog(@"here with %s\n",[[textField description]UTF8String]);
-    if(textField.tag == 2 && textField.text.length > 3){
-        self.logInButton.userInteractionEnabled = YES;
-    }
-}
+ - (void)textFieldDidBeginEditing:(UITextField *)textField{
+ //NSLog(@"here with %s\n",[[textField description]UTF8String]);
+ if(textField.tag == 2 && textField.text.length > 3){
+ self.logInButton.userInteractionEnabled = YES;
+ }
+ }
  */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -51,7 +50,6 @@
 }
 
 - (IBAction)forgotPassword:(id)sender {
-    
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Reset Password" message:@"Enter your email" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Submit",nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     [alert show];
@@ -65,22 +63,17 @@
 }
 
 - (IBAction)logIn:(id)sender {
-    //self.logInButton.userInteractionEnabled = NO;
     if(self.passwordField.text.length < 4 || self.usernameField.text.length < 3){
         [self failLogin];
     }else{
-    
         [PFUser logInWithUsernameInBackground:self.usernameField.text password:self.passwordField.text
-                                    block:^(PFUser *user, NSError *error) {
-                                        
-                                        if (user) {
-                                            //[self performSegueWithIdentifier:@"logIn" sender:self];
-                                            
-                                            [self dismissViewControllerAnimated:NO completion:nil];
-                                        } else {
-                                            [self failLogin];
-                                        }
-                                    }];
+                                        block:^(PFUser *user, NSError *error) {
+                                            if (user) {
+                                                [self dismissViewControllerAnimated:NO completion:nil];
+                                            } else {
+                                                [self failLogin];
+                                            }
+                                        }];
     }
     
 }
@@ -95,10 +88,8 @@
     anim.repeatCount = 2.0f ;
     anim.duration = 0.07f ;
     
-    
     [ self.passwordField.layer addAnimation:anim forKey:nil ] ;
 }
-
 -(void)tapRecog{
     [self.usernameField resignFirstResponder];
     [self.passwordField resignFirstResponder];
