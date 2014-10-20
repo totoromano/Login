@@ -30,7 +30,7 @@
     NSString *content = @"";
     
     for(int i =0; i < follows.count; i ++){
-        content = [content stringByAppendingString:[NSString stringWithFormat:@"%@ \n",[follows objectAtIndex:i]]];
+        content = [content stringByAppendingString:[NSString stringWithFormat:@"%@ \n",[follows objectAtIndex:i] ]];
     }
     self.followsLabel.text = content;
 }

@@ -217,14 +217,14 @@
                         <outlet property="followsLabel" destination="PoN-aG-zlI" id="GDH-bv-byT"/>
                         <outlet property="idLabel" destination="jEZ-lW-Ikl" id="bnA-yN-yut"/>
                         <outlet property="usernameLabel" destination="XjW-IR-6Mf" id="V62-UV-Erl"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="RequestLogIn" id="iGV-6c-9Uo"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="RequestLogIn" animates="NO" id="iGV-6c-9Uo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQX-DP-XIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2305" y="-355"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="kqW-Ns-VAj">
             <objects>
                 <viewController id="wk3-ef-fhD" sceneMemberID="viewController">
@@ -242,7 +242,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="mZD-YQ-nvQ"/>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="mZD-YQ-nvQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNW-c2-8Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,11 +269,11 @@
             </objects>
             <point key="canvasLocation" x="894" y="389"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="wXd-2d-GUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l1n-qT-waX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SYf-eG-SEH"/>
+                    <tabBarItem key="tabBarItem" title="Home" systemItem="contacts" id="SYf-eG-SEH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKP-ce-hcp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -324,11 +324,11 @@
             </objects>
             <point key="canvasLocation" x="2320" y="300"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="PbA-pO-v5e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l9A-eA-GXI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dEo-SU-ZFA"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="dEo-SU-ZFA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rNq-pB-BTI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
