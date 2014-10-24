@@ -14,6 +14,10 @@
 @end
 
 @implementation UserDetailsViewController
+
+
+
+
 -(void)viewDidAppear:(BOOL)animated{
     if(![PFUser currentUser]){
         [self performSegueWithIdentifier:@"RequestLogIn" sender:self];

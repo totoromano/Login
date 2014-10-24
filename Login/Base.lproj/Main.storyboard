@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2761" y="-647"/>
+            <point key="canvasLocation" x="2739" y="-1135"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8iI-WM-ISK">
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kht-tz-9Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3276" y="-647"/>
+            <point key="canvasLocation" x="3254" y="-1135"/>
         </scene>
         <!--VIEW 1-->
         <scene sceneID="gec-LY-p2g">
@@ -201,6 +201,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nIJ-bH-Juj">
+                                <rect key="frame" x="121" y="403" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Hlq-iM-iVz" kind="push" id="eOw-hB-hcS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -223,6 +233,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQX-DP-XIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2305" y="-355"/>
+        </scene>
+        <!--View 1.1-->
+        <scene sceneID="Az8-S5-uq3">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Hlq-iM-iVz" customClass="PushedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nik-4N-bfc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pushed View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="peb-D1-1zD">
+                                <rect key="frame" x="111" y="249" width="99" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View 1.1" id="Qzy-XQ-STN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0q0-jk-ydZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810" y="-355"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kqW-Ns-VAj">
@@ -251,10 +285,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="p5u-I4-juI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-PY-cnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="2lf-ti-o6O" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="7QR-hT-P0g"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="iJi-wZ-and">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -266,6 +299,7 @@
                         <segue destination="l9A-eA-GXI" kind="relationship" relationship="viewControllers" id="l6u-Tn-24c"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-PY-cnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="894" y="389"/>
         </scene>

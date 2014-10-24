@@ -29,6 +29,7 @@
 		D7807C7D19F201710082A3DE /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C7C19F201710082A3DE /* UserDetailsViewController.m */; };
 		D7807C8019F204910082A3DE /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C7F19F204910082A3DE /* SignUpViewController.m */; };
 		D7807C8519F302ED0082A3DE /* SchoolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */; };
+		D7807C8C19F9BAB40082A3DE /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C8B19F9BAB40082A3DE /* PushedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		D7807C7F19F204910082A3DE /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
 		D7807C8319F302ED0082A3DE /* SchoolsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchoolsTableViewController.h; path = ../SchoolsTableViewController.h; sourceTree = "<group>"; };
 		D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SchoolsTableViewController.m; path = ../SchoolsTableViewController.m; sourceTree = "<group>"; };
+		D7807C8A19F9BAB40082A3DE /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushedViewController.h; path = ../PushedViewController.h; sourceTree = "<group>"; };
+		D7807C8B19F9BAB40082A3DE /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushedViewController.m; path = ../PushedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				D7807C7F19F204910082A3DE /* SignUpViewController.m */,
 				D7807C8319F302ED0082A3DE /* SchoolsTableViewController.h */,
 				D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */,
+				D7807C8A19F9BAB40082A3DE /* PushedViewController.h */,
+				D7807C8B19F9BAB40082A3DE /* PushedViewController.m */,
 				D7807C3D19F1F8CD0082A3DE /* Main.storyboard */,
 				D7807C4019F1F8CD0082A3DE /* Images.xcassets */,
 				D7807C4219F1F8CD0082A3DE /* LaunchScreen.xib */,
@@ -285,6 +290,7 @@
 				D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */,
 				D7807C8519F302ED0082A3DE /* SchoolsTableViewController.m in Sources */,
 				D7807C8019F204910082A3DE /* SignUpViewController.m in Sources */,
+				D7807C8C19F9BAB40082A3DE /* PushedViewController.m in Sources */,
 				D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */,
 				D7807C7D19F201710082A3DE /* UserDetailsViewController.m in Sources */,
 				D7807C3619F1F8CD0082A3DE /* main.m in Sources */,
