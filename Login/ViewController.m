@@ -18,12 +18,14 @@
 -(void)viewWillAppear:(BOOL)animated{
     if([PFUser currentUser]){
         [self dismissViewControllerAnimated:YES completion:nil];
+       //[self performSegueWithIdentifier:@"loginSuccessful" sender:self];
     }
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     self.usernameField.text = @"";
     self.passwordField.text = @"";
+     [self.navigationController setNavigationBarHidden:YES];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,7 +36,7 @@
     [self.view addGestureRecognizer:tap];
     
     self.passwordField.delegate = self;
-    
+   
 }
 /*
  - (void)textFieldDidBeginEditing:(UITextField *)textField{
@@ -70,6 +72,7 @@
                                         block:^(PFUser *user, NSError *error) {
                                             if (user) {
                                                 [self dismissViewControllerAnimated:NO completion:nil];
+                                                //[self performSegueWithIdentifier:@"loginSuccessful" sender:self];
                                             } else {
                                                 [self failLogin];
                                             }

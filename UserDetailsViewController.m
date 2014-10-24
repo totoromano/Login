@@ -20,7 +20,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     if(![PFUser currentUser]){
-        [self performSegueWithIdentifier:@"RequestLogIn" sender:self];
+        [self performSegueWithIdentifier:@"requestLogin" sender:self];
     }
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -60,6 +60,9 @@
 
 - (IBAction)logOut:(id)sender {
     [PFUser logOut];
-    [self performSegueWithIdentifier:@"RequestLogIn" sender:self];
+    [self performSegueWithIdentifier:@"requestLogin" sender:self];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
+    
+    NSLog(@"%s\n",[[UIApplication description]UTF8String]);
 }
 @end

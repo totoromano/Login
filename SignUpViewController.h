@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UILabel *errorLabel;
+
 - (IBAction)signUp:(id)sender;
 - (IBAction)cancel:(id)sender;
 - (void)tapRecog;

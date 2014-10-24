@@ -50,7 +50,7 @@
         } else {
             NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
-            self.errorLabel.text = errorString;
+           // self.errorLabel.text = errorString;
         }
     }];
 }
