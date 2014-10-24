@@ -30,6 +30,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZgI-wL-uVF"/>
+                                    <segue destination="lla-Pe-7ML" kind="modal" id="GLK-Aa-GuW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
@@ -433,4 +434,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="GLK-Aa-GuW"/>
+    </inferredMetricsTieBreakers>
 </document>
