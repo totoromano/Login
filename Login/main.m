@@ -9,8 +9,23 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-int main(int argc, char * argv[]) {
+int main(int argc, char * argv[])
+{
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        int retval;
+        @try{
+            retval = UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        }
+        @catch (NSException *exception)
+        {
+            NSLog(@"Exception --> %s", [[exception.userInfo description] UTF8String]);
+           
+            // NSString *codeString = exception.name;
+            // [PFAnalytics trackEvent:@"error" dimensions:@{ @"code": codeString }];
+            
+            @throw;
+        }
+        return retval;
+        
     }
 }

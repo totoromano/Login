@@ -11,5 +11,8 @@
 @interface HomeViewController : UIViewController
 - (IBAction)login:(UIButton *)sender;
 - (IBAction)signup:(id)sender;
+@property (retain, nonatomic) IBOutlet UIButton *getStartedButton;
+@property (retain
+           , nonatomic) IBOutlet UIButton *logInButton;
 
 @end

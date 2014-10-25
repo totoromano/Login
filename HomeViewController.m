@@ -18,6 +18,7 @@
     if([PFUser currentUser]){
         [self dismissViewControllerAnimated:NO completion:nil];
     }
+    NSLog(@"%s",[[[[UIApplication sharedApplication]windows] description]UTF8String]);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -37,7 +38,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (IBAction)login:(UIButton *)sender {
     if([PFUser currentUser]){
@@ -50,6 +51,8 @@
 - (IBAction)signup:(id)sender {
      //[self performSegueWithIdentifier:@"requestSignup" sender:self];
     
+    
+    NSLog(@"HERE");
     [UIView animateWithDuration:1.5
                           delay:20.0
                         options:UIViewAnimationOptionCurveLinear // See other options

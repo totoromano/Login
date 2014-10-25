@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="79" y="275" width="160" height="27"/>
+                                <rect key="frame" x="78.999999728426346" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.9999985785585" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999409841578" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -136,6 +136,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="4Ko-YG-lCf"/>
                     <connections>
+                        <outlet property="getStartedButton" destination="qhs-ob-cWh" id="XJw-ZM-17j"/>
+                        <outlet property="logInButton" destination="0Hv-sL-YE3" id="GnF-ZE-hHP"/>
                         <segue destination="vXZ-lx-hvc" kind="custom" identifier="login" id="Qgi-YG-3EN"/>
                         <segue destination="lla-Pe-7ML" kind="custom" identifier="requestSignup" id="T23-9s-2dO"/>
                     </connections>
@@ -212,7 +214,7 @@
                         <outlet property="errorMessage" destination="NNB-Mi-zQO" id="Ued-zS-BNF"/>
                         <outlet property="passwordField" destination="HVI-HU-qFb" id="Gmh-UD-lqj"/>
                         <outlet property="usernameField" destination="ou2-aq-WMK" id="syZ-4k-P1Q"/>
-                        <segue destination="Cad-R1-WQ7" kind="custom" identifier="signUpBack" customClass="CustomSegue" id="d6W-ul-SjT"/>
+                        <segue destination="Cad-R1-WQ7" kind="custom" identifier="signUpBack" id="d6W-ul-SjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kht-tz-9Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -452,6 +454,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="d6W-ul-SjT"/>
+        <segue reference="vzF-Ph-PVC"/>
     </inferredMetricsTieBreakers>
 </document>

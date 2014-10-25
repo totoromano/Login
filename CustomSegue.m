@@ -18,11 +18,17 @@
     UIViewController *dst = (UIViewController *) self.destinationViewController;
         [UIView transitionFromView:src.view
                         toView:dst.view
-                      duration:3.0
+                      duration:1.0
                        options:UIViewAnimationOptionTransitionCrossDissolve
-                    completion:^(BOOL finished){
-                        [src dismissViewControllerAnimated:NO completion:nil];                       
+                                completion:nil];/*^(BOOL finished){
+                        NSLog(@"src: %s\n",[[src description]UTF8String]);
+                        //[dst dismissViewControllerAnimated:NO completion:nil];
+                        NSLog(@"Completed");
                     }];
+    
+     //   [UIView transitionFromView:src.view toView:dst.view duration:1.5 options:UIViewAnimationOptionTransitionCrossDissolve completion:NULL];
+    
+  */
     
 }
 

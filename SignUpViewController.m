@@ -104,7 +104,7 @@
 
 - (IBAction)goBack:(UIButton *)sender {
     
-    [self performSegueWithIdentifier:@"signUpBack" sender:self];
-    //[self dismissViewControllerAnimated:NO completion:nil];
+    //[self performSegueWithIdentifier:@"signUpBack" sender:self];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 @end
