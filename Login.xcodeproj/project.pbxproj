@@ -7,17 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A019FB67FB00005E3A /* Signup_placeholder.png */; };
-		595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A219FB697B00005E3A /* Signup_bg.png */; };
-		595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A419FB6A4500005E3A /* signup_bttn.png */; };
-		595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A619FB6B3D00005E3A /* back_arrow.png */; };
-		595AD1A919FB6DAE00005E3A /* signup_bttn_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */; };
-		595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1AA19FB6F4E00005E3A /* selected_bttn.png */; };
-		595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1AB19FB6F4E00005E3A /* white_bttn.png */; };
-		596B10AD19FBD28700B607D7 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 596B10AC19FBD28700B607D7 /* close.png */; };
-		596B10AF19FBD80C00B607D7 /* login_bg_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 596B10AE19FBD80C00B607D7 /* login_bg_placeholder.png */; };
-		596B10B119FBD87300B607D7 /* Login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 596B10B019FBD87300B607D7 /* Login_bg.png */; };
-		596B10B319FBD95100B607D7 /* x_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 596B10B219FBD95100B607D7 /* x_pressed.png */; };
 		59D5255319FB4ED50027C461 /* landing.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255219FB4ED50027C461 /* landing.png */; };
 		59D5255619FB4FC90027C461 /* Button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255419FB4FC90027C461 /* Button_default.png */; };
 		59D5255719FB4FC90027C461 /* Button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255519FB4FC90027C461 /* Button_selected.png */; };
@@ -62,17 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		595AD1A019FB67FB00005E3A /* Signup_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_placeholder.png; sourceTree = "<group>"; };
-		595AD1A219FB697B00005E3A /* Signup_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg.png; sourceTree = "<group>"; };
-		595AD1A419FB6A4500005E3A /* signup_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup_bttn.png; sourceTree = "<group>"; };
-		595AD1A619FB6B3D00005E3A /* back_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_arrow.png; sourceTree = "<group>"; };
-		595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup_bttn_selected.png; sourceTree = "<group>"; };
-		595AD1AA19FB6F4E00005E3A /* selected_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected_bttn.png; sourceTree = "<group>"; };
-		595AD1AB19FB6F4E00005E3A /* white_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bttn.png; sourceTree = "<group>"; };
-		596B10AC19FBD28700B607D7 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
-		596B10AE19FBD80C00B607D7 /* login_bg_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg_placeholder.png; sourceTree = "<group>"; };
-		596B10B019FBD87300B607D7 /* Login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_bg.png; sourceTree = "<group>"; };
-		596B10B219FBD95100B607D7 /* x_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_pressed.png; sourceTree = "<group>"; };
 		59D5255219FB4ED50027C461 /* landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing.png; sourceTree = "<group>"; };
 		59D5255419FB4FC90027C461 /* Button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_default.png; sourceTree = "<group>"; };
 		59D5255519FB4FC90027C461 /* Button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_selected.png; sourceTree = "<group>"; };
@@ -154,17 +132,6 @@
 			children = (
 				D725390119FB5D7A007FDC8B /* lipscomb-logo.png */,
 				59D5255419FB4FC90027C461 /* Button_default.png */,
-				595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */,
-				595AD1A619FB6B3D00005E3A /* back_arrow.png */,
-				596B10AC19FBD28700B607D7 /* close.png */,
-				596B10B219FBD95100B607D7 /* x_pressed.png */,
-				596B10AE19FBD80C00B607D7 /* login_bg_placeholder.png */,
-				595AD1AA19FB6F4E00005E3A /* selected_bttn.png */,
-				595AD1AB19FB6F4E00005E3A /* white_bttn.png */,
-				596B10B019FBD87300B607D7 /* Login_bg.png */,
-				595AD1A019FB67FB00005E3A /* Signup_placeholder.png */,
-				595AD1A419FB6A4500005E3A /* signup_bttn.png */,
-				595AD1A219FB697B00005E3A /* Signup_bg.png */,
 				59D5255519FB4FC90027C461 /* Button_selected.png */,
 				59D5255219FB4ED50027C461 /* landing.png */,
 			);
@@ -307,7 +274,6 @@
 				TargetAttributes = {
 					D7807C2F19F1F8CD0082A3DE = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = NGMM56J23B;
 					};
 					D7807C4819F1F8CD0082A3DE = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -340,24 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7807C9519FB0F4E0082A3DE /* Main.storyboard in Resources */,
-				596B10B319FBD95100B607D7 /* x_pressed.png in Resources */,
 				59D5255719FB4FC90027C461 /* Button_selected.png in Resources */,
-				595AD1A919FB6DAE00005E3A /* signup_bttn_selected.png in Resources */,
 				59D5255619FB4FC90027C461 /* Button_default.png in Resources */,
-				596B10B119FBD87300B607D7 /* Login_bg.png in Resources */,
-				595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */,
 				D725390219FB5D7A007FDC8B /* lipscomb-logo.png in Resources */,
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
-				595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */,
-				596B10AF19FBD80C00B607D7 /* login_bg_placeholder.png in Resources */,
-				595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */,
-				595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */,
-				595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */,
-				595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
-				596B10AD19FBD28700B607D7 /* close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,8 +462,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Login",
@@ -516,7 +469,6 @@
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -524,8 +476,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Login",
@@ -533,7 +483,6 @@
 				INFOPLIST_FILE = Login/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
