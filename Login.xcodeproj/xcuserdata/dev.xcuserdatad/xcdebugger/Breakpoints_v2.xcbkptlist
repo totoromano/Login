@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UserDetailsViewController.m"
-            timestampString = "435968290.112222"
+            timestampString = "435969143.05191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-logOut:"
             landmarkType = "5">
          </BreakpointContent>
