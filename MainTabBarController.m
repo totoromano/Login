@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.tabBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
+    self.tabBar.barTintColor = [UIColor colorWithRed:63/255.0 green:71/255.0 blue:72/255.0 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning {
