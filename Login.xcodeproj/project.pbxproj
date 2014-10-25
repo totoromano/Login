@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59D5255319FB4ED50027C461 /* landing.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255219FB4ED50027C461 /* landing.png */; };
+		59D5255619FB4FC90027C461 /* Button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255419FB4FC90027C461 /* Button_default.png */; };
+		59D5255719FB4FC90027C461 /* Button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255519FB4FC90027C461 /* Button_selected.png */; };
 		D72538F419FB4639007FDC8B /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D72538F319FB4638007FDC8B /* CustomSegue.m */; };
 		D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */; };
 		D7807C3619F1F8CD0082A3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3519F1F8CD0082A3DE /* main.m */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59D5255219FB4ED50027C461 /* landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing.png; sourceTree = "<group>"; };
+		59D5255419FB4FC90027C461 /* Button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_default.png; sourceTree = "<group>"; };
+		59D5255519FB4FC90027C461 /* Button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_selected.png; sourceTree = "<group>"; };
 		D72538F219FB4638007FDC8B /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSegue.h; path = ../CustomSegue.h; sourceTree = "<group>"; };
 		D72538F319FB4638007FDC8B /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = ../CustomSegue.m; sourceTree = "<group>"; };
 		D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing_LandscapeBG.png; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59D5255119FB4EC00027C461 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				59D5255419FB4FC90027C461 /* Button_default.png */,
+				59D5255519FB4FC90027C461 /* Button_selected.png */,
+				59D5255219FB4ED50027C461 /* landing.png */,
+			);
+			name = Img;
+			sourceTree = "<group>";
+		};
 		D7807C2719F1F8CD0082A3DE = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */,
+				59D5255119FB4EC00027C461 /* Img */,
 				D7807C5D19F1FA150082A3DE /* AudioToolbox.framework */,
 				D7807C5E19F1FA150082A3DE /* CFNetwork.framework */,
 				D7807C5F19F1FA150082A3DE /* CoreGraphics.framework */,
@@ -281,9 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7807C9519FB0F4E0082A3DE /* Main.storyboard in Resources */,
+				59D5255719FB4FC90027C461 /* Button_selected.png in Resources */,
+				59D5255619FB4FC90027C461 /* Button_default.png in Resources */,
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
+				59D5255319FB4ED50027C461 /* landing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
