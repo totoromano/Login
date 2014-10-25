@@ -13,11 +13,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg.png" id="RAE-xl-Yum">
-                                <rect key="frame" x="-6" y="-5" width="331" height="579"/>
+                                <rect key="frame" x="-6" y="-10" width="331" height="579"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TdI-ys-mVN">
-                                <rect key="frame" x="10" y="258" width="300" height="48"/>
+                                <rect key="frame" x="10" y="215" width="300" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In" backgroundImage="white_bttn.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -30,38 +30,44 @@
                                     <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L6G-A9-c2L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="97.000000848911952" y="317" width="133" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <state key="normal" title="Forgot Password?">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="forgotPassword:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p9G-FX-lgI"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" id="LdA-4A-hmg">
-                                <rect key="frame" x="40" y="119" width="221" height="30"/>
+                                <rect key="frame" x="33" y="114" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" id="CZB-Hu-6jb">
-                                <rect key="frame" x="40" y="163" width="221" height="30"/>
+                                <rect key="frame" x="33" y="158" width="255" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zUo-F4-3K5">
-                                <rect key="frame" x="18" y="33" width="18" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zUo-F4-3K5">
+                                <rect key="frame" x="18" y="33" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_arrow.png">
+                                <state key="normal" backgroundImage="x_close.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" backgroundImage="x_pressed.png"/>
+                                <state key="highlighted" backgroundImage="x_pressed.png"/>
                                 <connections>
                                     <action selector="goBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YOU-aD-Qva"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
+                                <rect key="frame" x="79" y="275" width="160" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Forgot Password?">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.23921568627450981" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.21568627450980393" green="0.23921568627450981" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p9G-FX-lgI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,13 +98,18 @@
                                 <rect key="frame" x="-8" y="-5" width="333" height="573"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999605790626" y="490" width="77" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
+                                <rect key="frame" x="124" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Login">
+                                    <color key="titleColor" red="0.2156862745" green="0.23921568630000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.2156862745" green="0.23921568630000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="Cad-R1-WQ7" eventType="touchUpInside" id="L04-m1-vqz"/>
@@ -142,39 +153,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Signup_bg.png" id="b33-ZI-cjj">
-                                <rect key="frame" x="0.0" y="-1" width="326" height="576"/>
+                                <rect key="frame" x="-3" y="-1" width="326" height="576"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" id="ou2-aq-WMK">
-                                <rect key="frame" x="36" y="97" width="209" height="30"/>
+                                <rect key="frame" x="38" y="97" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" id="HVI-HU-qFb">
-                                <rect key="frame" x="36" y="187" width="209" height="30"/>
+                                <rect key="frame" x="38" y="187" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" id="hoD-Pq-b5L">
-                                <rect key="frame" x="39" y="143" width="209" height="30"/>
+                                <rect key="frame" x="38" y="143" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EaI-at-vHv">
-                                <rect key="frame" x="18" y="33" width="19" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EaI-at-vHv">
+                                <rect key="frame" x="18" y="33" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back_arrow.png">
+                                <state key="normal" backgroundImage="x_close.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" backgroundImage="x_pressed.png"/>
+                                <state key="highlighted" backgroundImage="x_pressed.png"/>
                                 <connections>
                                     <action selector="goBack:" destination="lla-Pe-7ML" eventType="touchUpInside" id="5gV-w8-6cr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v2y-0H-9HV">
-                                <rect key="frame" x="16" y="254" width="296" height="56"/>
+                                <rect key="frame" x="19" y="239" width="288" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="signup_bttn.png"/>
                                 <state key="selected" backgroundImage="signup_bttn_selected.png"/>
@@ -416,13 +429,14 @@
     </scenes>
     <resources>
         <image name="Signup_bg.png" width="640" height="1136"/>
-        <image name="back_arrow.png" width="32" height="52"/>
         <image name="landing.png" width="640" height="1136"/>
         <image name="login_bg.png" width="640" height="1136"/>
         <image name="selected_bttn.png" width="578" height="104"/>
         <image name="signup_bttn.png" width="578" height="104"/>
         <image name="signup_bttn_selected.png" width="578" height="104"/>
         <image name="white_bttn.png" width="578" height="104"/>
+        <image name="x_close.png" width="28" height="28"/>
+        <image name="x_pressed.png" width="28" height="28"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

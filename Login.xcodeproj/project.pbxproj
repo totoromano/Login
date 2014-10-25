@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		592ABAAD19FBEFB000761D0F /* x_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 592ABAAB19FBEFB000761D0F /* x_close.png */; };
+		592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 592ABAAC19FBEFB000761D0F /* x_pressed.png */; };
 		595AD19F19FB62F200005E3A /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD19E19FB62F200005E3A /* login_bg.png */; };
 		595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A019FB67FB00005E3A /* Signup_placeholder.png */; };
 		595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A219FB697B00005E3A /* Signup_bg.png */; };
@@ -59,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		592ABAAB19FBEFB000761D0F /* x_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_close.png; sourceTree = "<group>"; };
+		592ABAAC19FBEFB000761D0F /* x_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_pressed.png; sourceTree = "<group>"; };
 		595AD19E19FB62F200005E3A /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
 		595AD1A019FB67FB00005E3A /* Signup_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_placeholder.png; sourceTree = "<group>"; };
 		595AD1A219FB697B00005E3A /* Signup_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg.png; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				595AD1A619FB6B3D00005E3A /* back_arrow.png */,
 				595AD1AA19FB6F4E00005E3A /* selected_bttn.png */,
 				595AD1AB19FB6F4E00005E3A /* white_bttn.png */,
+				592ABAAB19FBEFB000761D0F /* x_close.png */,
+				592ABAAC19FBEFB000761D0F /* x_pressed.png */,
 				595AD1A019FB67FB00005E3A /* Signup_placeholder.png */,
 				595AD1A419FB6A4500005E3A /* signup_bttn.png */,
 				595AD1A219FB697B00005E3A /* Signup_bg.png */,
@@ -338,9 +344,11 @@
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
 				595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */,
 				595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */,
+				592ABAAD19FBEFB000761D0F /* x_close.png in Resources */,
 				595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */,
 				595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */,
 				595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */,
+				592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
