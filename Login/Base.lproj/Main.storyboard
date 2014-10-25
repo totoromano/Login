@@ -99,7 +99,9 @@
                                 <connections>
                                     <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s1n-SI-W17"/>
                                     <action selector="signup:" destination="Cad-R1-WQ7" eventType="touchUpInside" id="cR9-8z-i2o"/>
-                                    <segue destination="lla-Pe-7ML" kind="modal" id="xH6-6w-WZ6"/>
+                                    <segue destination="lla-Pe-7ML" kind="popover" popoverAnchorView="qhs-ob-cWh" id="xH6-6w-WZ6">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -182,7 +184,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fOW-qh-9oK"/>
                     <connections>
