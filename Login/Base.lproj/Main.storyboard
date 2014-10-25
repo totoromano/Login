@@ -23,7 +23,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
+<<<<<<< HEAD
                                 <rect key="frame" x="97" y="349" width="107" height="18"/>
+=======
+                                <rect key="frame" x="96.999997363270936" y="317" width="133" height="27"/>
+>>>>>>> parent of a67567d... Minor Changes
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Forgot Password">
@@ -84,7 +88,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
+<<<<<<< HEAD
                                 <rect key="frame" x="123.99999633280716" y="490" width="77" height="39"/>
+=======
+                                <rect key="frame" x="123.99999980936344" y="490" width="77" height="39"/>
+>>>>>>> parent of a67567d... Minor Changes
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login">
