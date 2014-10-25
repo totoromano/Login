@@ -16,12 +16,12 @@
     NSLog(@"Custom Segue Fired");
     UIViewController *src = (UIViewController *) self.sourceViewController;
     UIViewController *dst = (UIViewController *) self.destinationViewController;
-    [UIView transitionFromView:src.view
+        [UIView transitionFromView:src.view
                         toView:dst.view
                       duration:3.0
                        options:UIViewAnimationOptionTransitionCrossDissolve
                     completion:^(BOOL finished){
-                        [self.sourceViewController dismissViewControllerAnimated:NO completion:nil];
+                        [src dismissViewControllerAnimated:NO completion:nil];                       
                     }];
     
 }
