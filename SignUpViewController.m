@@ -23,6 +23,8 @@
     //[self.view setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.3]];
    // self.view.layer.backgroundColor = [[UIColor clearColor]CGColor];
     
+     [self.usernameField becomeFirstResponder];
+    
 
 }
 
@@ -55,8 +57,30 @@
             NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
            // self.errorLabel.text = errorString;
+            NSLog(@"%s",[errorString UTF8String]);
+            if([errorString hasPrefix:@"username"]){
+                [self failSignup:@"username"];
+            }else{
+                [self failSignup:@"password"];
+            }
         }
     }];
+}
+
+-(void)failSignup:(NSString *)error{
+    CAKeyframeAnimation * anim = [ CAKeyframeAnimation animationWithKeyPath:@"transform" ] ;
+    anim.values = @[ [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-5.0f, 0.0f, 0.0f) ], [ NSValue valueWithCATransform3D:CATransform3DMakeTranslation(5.0f, 0.0f, 0.0f) ] ] ;
+    anim.autoreverses = YES ;
+    anim.repeatCount = 2.0f ;
+    anim.duration = 0.07f ;
+    
+    if([error isEqualToString:@"username"]){
+        [ self.usernameField.layer addAnimation:anim forKey:nil ] ;
+    }else{
+        [ self.emailField.layer addAnimation:anim forKey:nil ] ;
+    }
+    
+    
 }
 
 - (IBAction)cancel:(id)sender {
