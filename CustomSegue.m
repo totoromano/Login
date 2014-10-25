@@ -20,7 +20,9 @@
                         toView:dst.view
                       duration:3.0
                        options:UIViewAnimationOptionTransitionCrossDissolve
-                    completion:NULL];
+                    completion:^(BOOL finished){
+                        [self.sourceViewController dismissViewControllerAnimated:NO completion:nil];
+                    }];
     
 }
 
