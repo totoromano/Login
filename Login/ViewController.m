@@ -17,7 +17,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     if([PFUser currentUser]){
-        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:NO completion:nil];
        //[self performSegueWithIdentifier:@"loginSuccessful" sender:self];
     }
 }
