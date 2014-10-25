@@ -63,11 +63,13 @@
                 // Show the errorString somewhere and let the user try again.
                 // self.errorLabel.text = errorString;
                 NSLog(@"%s",[errorString UTF8String]);
-                self.errorMessage.text = errorString;
+                
                 if([errorString hasPrefix:@"username"]){
                     [self failSignup:@"username"];
+                    self.errorMessage.text = @"This username is already taken";
                 }else{
                     [self failSignup:@"email"];
+                    self.errorMessage.text = @"This email already exists";
                 }
             }
         }];
