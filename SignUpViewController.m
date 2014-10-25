@@ -48,23 +48,25 @@
     user.username = self.usernameField.text;
     user.password = self.passwordField.text;
     user.email = self.emailField.text;
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            [self dismissViewControllerAnimated:NO completion:nil];
-            //[self performSegueWithIdentifier:@"signedUp" sender:self];
+    if(![self.usernameField.text isEqualToString: @""] && self.passwordField.text.length >= 5 && [self.emailField.text containsString:@"@"]){
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                [self dismissViewControllerAnimated:NO completion:nil];
+                //[self performSegueWithIdentifier:@"signedUp" sender:self];
             
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            // Show the errorString somewhere and let the user try again.
-           // self.errorLabel.text = errorString;
-            NSLog(@"%s",[errorString UTF8String]);
-            if([errorString hasPrefix:@"username"]){
-                [self failSignup:@"username"];
-            }else{
-                [self failSignup:@"password"];
+            } else {
+                NSString *errorString = [error userInfo][@"error"];
+                // Show the errorString somewhere and let the user try again.
+                // self.errorLabel.text = errorString;
+                NSLog(@"%s",[errorString UTF8String]);
+                if([errorString hasPrefix:@"username"]){
+                    [self failSignup:@"username"];
+                }else{
+                    [self failSignup:@"email"];
+                }
             }
-        }
-    }];
+        }];
+    }
 }
 
 -(void)failSignup:(NSString *)error{
