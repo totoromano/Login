@@ -30,6 +30,19 @@
     
   */
     
+  /*  [self transitionFromViewController:src
+                      toViewController:dst
+                              duration:0.25
+                               options:UIViewAnimationOptionCurveEaseInOut
+                            animations:^{
+                                src.view.alpha = 0;
+                                dst.view.alpha = 1;
+                            } completion:^(BOOL finished) {
+                                [src removeFromParentViewController];
+                                [dst didMoveToParentViewController:self];
+                            }];
+   */
+    
 }
 
 @end

@@ -106,5 +106,14 @@
     
     //[self performSegueWithIdentifier:@"signUpBack" sender:self];
     [self dismissViewControllerAnimated:NO completion:nil];
+   /* [UIView animateWithDuration:1.5
+        animations:^{
+        self.view.alpha = 0.3;
+    } completion:^(BOOL b){
+        [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
+        self.view.alpha = 1;
+    }];
+    */
+    
 }
 @end
