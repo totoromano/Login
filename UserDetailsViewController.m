@@ -43,7 +43,7 @@
     [self.schoolsCollection reloadData];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                                    [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12],NSFontAttributeName,nil];
+                                                                    [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
 }
 
 - (void)viewDidLoad {
