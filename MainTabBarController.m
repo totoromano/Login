@@ -15,6 +15,10 @@
 @implementation MainTabBarController
 
 -(void)viewWillAppear:(BOOL)animated{
+    
+
+
+    
    //tab1
     UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
     UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
@@ -22,6 +26,8 @@
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 initWithTitle:@"Title 1" image:unselectedImage selectedImage:selectedImage];
     [item1 setTitle:@"Search"];
+    [item1 setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor redColor] }
+                         forState:UIControlStateSelected];
     
     //tab2
     selectedImage = [UIImage imageNamed:@"home_selected.png"];
@@ -30,6 +36,8 @@
     [item2 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item2 initWithTitle:@"Title 2" image:unselectedImage selectedImage:selectedImage];
     [item2 setTitle:@"Home"];
+    [item2 setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor redColor] }
+                         forState:UIControlStateSelected];
     
     //tab3
     selectedImage = [UIImage imageNamed:@"info_selected.png"];
@@ -38,6 +46,8 @@
     [item3 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item3 initWithTitle:@"Title 3" image:unselectedImage selectedImage:selectedImage];
     [item3 setTitle:@"Info"];
+    [item3 setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor redColor] }
+                         forState:UIControlStateSelected];
 }
 
 - (void)viewDidLoad {
