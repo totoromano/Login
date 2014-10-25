@@ -13,6 +13,7 @@
 
 - (void)perform
 {
+    NSLog(@"Custom Segue Fired");
     UIViewController *src = (UIViewController *) self.sourceViewController;
     UIViewController *dst = (UIViewController *) self.destinationViewController;
     [UIView transitionFromView:src.view
