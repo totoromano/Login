@@ -16,11 +16,11 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     self.hidesBottomBarWhenPushed = YES;
-    self.title = [_container objectAtIndex:0];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = [_container objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

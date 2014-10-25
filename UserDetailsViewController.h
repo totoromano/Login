@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
 
-@interface UserDetailsViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate>
-@property (weak, nonatomic) IBOutlet UICollectionView *sportsCollection;
-
+@interface UserDetailsViewController : UIViewController < UICollectionViewDelegate,UICollectionViewDataSource>
+/*
+@property (weak, nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *emailLabel;
+@property (weak, nonatomic) IBOutlet UILabel *idLabel;
+@property (weak, nonatomic) IBOutlet UILabel *followsLabel;
+ */
+@property (weak, nonatomic) IBOutlet UICollectionView *schoolsCollection;
 - (IBAction)logOut:(id)sender;
 @end
