@@ -15,24 +15,29 @@
 @implementation MainTabBarController
 
 -(void)viewWillAppear:(BOOL)animated{
-   /*tab1
-    UIImage *selectedImage = [UIImage search:@"search_selected.png"];
-    UIImage *unselectedImage = [UIImage search:@"search_icon.png"];
+   //tab1
+    UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
+    UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
+    //[item1 initWithTitle:@"Title 1" image:unselectedImage selectedImage:selectedImage];
+    [item1 setTitle:@"Title 1"];
     
-    tab2
-    selectedImage = [UIImage home:@"home_selected.png"];
-    unselectedImage = [UIImage home:@"home_icon.png"];
+    //tab2
+    selectedImage = [UIImage imageNamed:@"home_selected.png"];
+    unselectedImage = [UIImage imageNamed:@"home_icon.png"];
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];
     [item2 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
+    //[item2 initWithTitle:@"Title 2" image:unselectedImage selectedImage:selectedImage];
+    [item2 setTitle:@"Title 2"];
     
     //tab3
-    selectedImage = [UIImage about:@"info_selected.png"];
-    unselectedImage = [UIImage about:@"info_icon.png"];
+    selectedImage = [UIImage imageNamed:@"info_selected.png"];
+    unselectedImage = [UIImage imageNamed:@"info_icon.png"];
     UITabBarItem *item3 = [self.tabBar.items objectAtIndex:2];
     [item3 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
-    */
+    //[item3 initWithTitle:@"Title 3" image:unselectedImage selectedImage:selectedImage];
+    [item3 setTitle:@"Title 3"];
 }
 
 - (void)viewDidLoad {

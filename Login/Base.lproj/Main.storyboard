@@ -331,7 +331,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="mZD-YQ-nvQ"/>
+                    <tabBarItem key="tabBarItem" id="mZD-YQ-nvQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNW-c2-8Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,7 +362,7 @@
         <scene sceneID="wXd-2d-GUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l1n-qT-waX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="SYf-eG-SEH"/>
+                    <tabBarItem key="tabBarItem" id="SYf-eG-SEH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKP-ce-hcp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -420,7 +420,7 @@
         <scene sceneID="PbA-pO-v5e">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l9A-eA-GXI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="dEo-SU-ZFA"/>
+                    <tabBarItem key="tabBarItem" id="dEo-SU-ZFA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rNq-pB-BTI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
