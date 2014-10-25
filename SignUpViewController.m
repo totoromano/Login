@@ -105,8 +105,8 @@
 - (IBAction)goBack:(UIButton *)sender {
     
     //[self performSegueWithIdentifier:@"signUpBack" sender:self];
-    [self dismissViewControllerAnimated:NO completion:nil];
-   /* [UIView animateWithDuration:1.5
+   [self dismissViewControllerAnimated:NO completion:nil];
+    /*[UIView animateWithDuration:1.5
         animations:^{
        // self.view.alpha = 0.3;
             UIViewController *src = (UIViewController *) self;
@@ -116,7 +116,7 @@
                               duration:1.0
                                options:UIViewAnimationOptionTransitionCrossDissolve
                             completion:^(BOOL b){
-                                [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
+                                //[self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
                             }];
             
         

@@ -41,6 +41,7 @@
     }
 //    self.followsLabel.text = content;
     [self.schoolsCollection reloadData];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
 }
 
 - (void)viewDidLoad {
