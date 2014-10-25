@@ -15,6 +15,10 @@
 
 @implementation SignUpViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    self.errorMessage.text = @"";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -59,6 +63,7 @@
                 // Show the errorString somewhere and let the user try again.
                 // self.errorLabel.text = errorString;
                 NSLog(@"%s",[errorString UTF8String]);
+                self.errorMessage.text = errorString;
                 if([errorString hasPrefix:@"username"]){
                     [self failSignup:@"username"];
                 }else{
