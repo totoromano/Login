@@ -50,7 +50,7 @@
     [self.schoolsCollection setDataSource:self];
     [self.schoolsCollection setDelegate:self];
     
-    self.schoolsCollection.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:1];
+    self.schoolsCollection.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
 }
 
 - (void)didReceiveMemoryWarning {
