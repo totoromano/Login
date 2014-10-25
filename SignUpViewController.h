@@ -16,5 +16,6 @@
 - (IBAction)signUp:(id)sender;
 - (IBAction)cancel:(id)sender;
 - (void)tapRecog;
+- (IBAction)goBack:(UIButton *)sender;
 
 @end

@@ -17,6 +17,7 @@
 - (IBAction)logIn:(id)sender;
 - (IBAction)signUp:(id)sender;
 - (void)tapRecog;
+- (IBAction)goBack:(UIButton *)sender;
 
 @end
 

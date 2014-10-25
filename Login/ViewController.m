@@ -97,4 +97,9 @@
     [self.usernameField resignFirstResponder];
     [self.passwordField resignFirstResponder];
 }
+
+- (IBAction)goBack:(UIButton *)sender {
+    
+    [self performSegueWithIdentifier:@"logInBack" sender:self];
+}
 @end

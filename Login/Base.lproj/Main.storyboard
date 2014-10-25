@@ -22,17 +22,6 @@
                                     <action selector="logIn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="L6G-A9-c2L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="y2r-2v-Lvm">
-                                <rect key="frame" x="122" y="490" width="77" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZgI-wL-uVF"/>
-                                    <segue destination="lla-Pe-7ML" kind="modal" id="GLK-Aa-GuW"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
                                 <rect key="frame" x="97" y="349" width="107" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -56,6 +45,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zUo-F4-3K5">
+                                <rect key="frame" x="25" y="14" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YOU-aD-Qva"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -65,11 +64,12 @@
                         <outlet property="logInButton" destination="TdI-ys-mVN" id="CCc-iX-FDW"/>
                         <outlet property="passwordField" destination="CZB-Hu-6jb" id="7jt-cd-BvM"/>
                         <outlet property="usernameField" destination="LdA-4A-hmg" id="s2r-Hd-AFM"/>
+                        <segue destination="Cad-R1-WQ7" kind="custom" identifier="logInBack" id="1mE-m0-7fU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2665" y="-1048"/>
+            <point key="canvasLocation" x="2725" y="-1115"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="f5G-fz-dnJ">
@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="116.99999483165709" y="228" width="77" height="39"/>
+                                <rect key="frame" x="116.99999898508339" y="228" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -91,7 +91,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qhs-ob-cWh">
-                                <rect key="frame" x="116.99999483165709" y="275" width="77" height="39"/>
+                                <rect key="frame" x="116.99999898508339" y="275" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9X-AD-x0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="-1048"/>
+            <point key="canvasLocation" x="2245" y="-1115"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="8iI-WM-ISK">
@@ -140,14 +140,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ia0-ad-27u">
-                                <rect key="frame" x="256" y="82" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="EaI-at-vHv">
+                                <rect key="frame" x="19" y="20" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" title="&lt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancel:" destination="lla-Pe-7ML" eventType="touchUpInside" id="mnK-Pk-Nbn"/>
+                                    <action selector="goBack:" destination="lla-Pe-7ML" eventType="touchUpInside" id="5gV-w8-6cr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v2y-0H-9HV">
@@ -171,6 +171,16 @@
                                     <action selector="forgotPassword:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uai-7D-c13"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ia0-ad-27u">
+                                <rect key="frame" x="256" y="26" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="lla-Pe-7ML" eventType="touchUpInside" id="mnK-Pk-Nbn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -179,11 +189,12 @@
                         <outlet property="emailField" destination="hoD-Pq-b5L" id="Kbn-ea-Ray"/>
                         <outlet property="passwordField" destination="HVI-HU-qFb" id="Gmh-UD-lqj"/>
                         <outlet property="usernameField" destination="ou2-aq-WMK" id="syZ-4k-P1Q"/>
+                        <segue destination="Cad-R1-WQ7" kind="custom" identifier="signUpBack" id="d6W-ul-SjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kht-tz-9Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702" y="-1024"/>
+            <point key="canvasLocation" x="1671" y="-1115"/>
         </scene>
         <!--VIEW 1-->
         <scene sceneID="gec-LY-p2g">
@@ -435,6 +446,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GLK-Aa-GuW"/>
+        <segue reference="d6W-ul-SjT"/>
     </inferredMetricsTieBreakers>
 </document>
