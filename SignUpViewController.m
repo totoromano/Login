@@ -108,10 +108,24 @@
     [self dismissViewControllerAnimated:NO completion:nil];
    /* [UIView animateWithDuration:1.5
         animations:^{
-        self.view.alpha = 0.3;
+       // self.view.alpha = 0.3;
+            UIViewController *src = (UIViewController *) self;
+            UIViewController *dst = (UIViewController *) self.presentingViewController;//destinationViewController;
+            [UIView transitionFromView:src.view
+                                toView:dst.view
+                              duration:1.0
+                               options:UIViewAnimationOptionTransitionCrossDissolve
+                            completion:^(BOOL b){
+                                [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
+                            }];
+            
+        
+       
     } completion:^(BOOL b){
-        [self.presentingViewController dismissViewControllerAnimated:NO completion:nil];
-        self.view.alpha = 1;
+        NSLog(@"Completed");
+        //self.view.alpha = 1;
+        //self.presentingViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve ;
+        //[self dismissViewControllerAnimated:NO completion:nil];
     }];
     */
     
