@@ -99,7 +99,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
+<<<<<<< HEAD
                                 <rect key="frame" x="124" y="490" width="76.999998578558504" height="39"/>
+=======
+                                <rect key="frame" x="123.9999985785585" y="490" width="77" height="39"/>
+>>>>>>> 1ef825d56b8f07e42db85ea208a8401fdd0577b5
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
