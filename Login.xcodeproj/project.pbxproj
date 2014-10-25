@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595AD19F19FB62F200005E3A /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD19E19FB62F200005E3A /* login_bg.png */; };
 		59D5255319FB4ED50027C461 /* landing.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255219FB4ED50027C461 /* landing.png */; };
 		59D5255619FB4FC90027C461 /* Button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255419FB4FC90027C461 /* Button_default.png */; };
 		59D5255719FB4FC90027C461 /* Button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255519FB4FC90027C461 /* Button_selected.png */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595AD19E19FB62F200005E3A /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
 		59D5255219FB4ED50027C461 /* landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing.png; sourceTree = "<group>"; };
 		59D5255419FB4FC90027C461 /* Button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_default.png; sourceTree = "<group>"; };
 		59D5255519FB4FC90027C461 /* Button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_selected.png; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				D725390119FB5D7A007FDC8B /* lipscomb-logo.png */,
 				59D5255419FB4FC90027C461 /* Button_default.png */,
+				595AD19E19FB62F200005E3A /* login_bg.png */,
 				59D5255519FB4FC90027C461 /* Button_selected.png */,
 				59D5255219FB4ED50027C461 /* landing.png */,
 			);
@@ -313,6 +316,7 @@
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
+				595AD19F19FB62F200005E3A /* login_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
