@@ -99,17 +99,15 @@
                                 <connections>
                                     <action selector="signUp:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s1n-SI-W17"/>
                                     <action selector="signup:" destination="Cad-R1-WQ7" eventType="touchUpInside" id="cR9-8z-i2o"/>
-                                    <segue destination="lla-Pe-7ML" kind="popover" popoverAnchorView="qhs-ob-cWh" id="xH6-6w-WZ6">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96241230870000005" green="0.61192734150000005" blue="0.21476909750000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Ko-YG-lCf"/>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="custom" identifier="login" id="Qgi-YG-3EN"/>
+                        <segue destination="lla-Pe-7ML" kind="custom" identifier="requestSignup" id="T23-9s-2dO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9X-AD-x0R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +118,7 @@
         <scene sceneID="8iI-WM-ISK">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="lla-Pe-7ML" customClass="SignUpViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aRl-Hk-Dah">
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.39999999999999963" contentMode="scaleToFill" id="aRl-Hk-Dah">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -196,7 +194,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kht-tz-9Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="-1115"/>
+            <point key="canvasLocation" x="1689" y="-1115"/>
         </scene>
         <!--VIEW 1-->
         <scene sceneID="gec-LY-p2g">
