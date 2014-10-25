@@ -21,7 +21,7 @@
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 initWithTitle:@"Title 1" image:unselectedImage selectedImage:selectedImage];
-    [item1 setTitle:@"Title 1"];
+    [item1 setTitle:@"Search"];
     
     //tab2
     selectedImage = [UIImage imageNamed:@"home_selected.png"];
@@ -29,7 +29,7 @@
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];
     [item2 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item2 initWithTitle:@"Title 2" image:unselectedImage selectedImage:selectedImage];
-    [item2 setTitle:@"Title 2"];
+    [item2 setTitle:@"Home"];
     
     //tab3
     selectedImage = [UIImage imageNamed:@"info_selected.png"];
@@ -37,7 +37,7 @@
     UITabBarItem *item3 = [self.tabBar.items objectAtIndex:2];
     [item3 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item3 initWithTitle:@"Title 3" image:unselectedImage selectedImage:selectedImage];
-    [item3 setTitle:@"Title 3"];
+    [item3 setTitle:@"Info"];
 }
 
 - (void)viewDidLoad {
