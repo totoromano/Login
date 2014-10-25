@@ -102,7 +102,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.96241230870000005" green="0.61192734150000005" blue="0.21476909750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4Ko-YG-lCf"/>
                     <connections>
@@ -118,7 +118,7 @@
         <scene sceneID="8iI-WM-ISK">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" id="lla-Pe-7ML" customClass="SignUpViewController" sceneMemberID="viewController">
-                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.39999999999999963" contentMode="scaleToFill" id="aRl-Hk-Dah">
+                    <view key="view" autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="aRl-Hk-Dah">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -182,7 +182,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="fOW-qh-9oK"/>
                     <connections>

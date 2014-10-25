@@ -48,8 +48,9 @@
 }
 
 - (IBAction)signup:(id)sender {
+     [self performSegueWithIdentifier:@"requestSignup" sender:self];
     
-    [UIView animateWithDuration:1.5
+   /* [UIView animateWithDuration:1.5
                           delay:2.0
                         options:UIViewAnimationOptionCurveLinear // See other options
                      animations:^{
@@ -59,5 +60,6 @@
                          // Completion Block
                          [self performSegueWithIdentifier:@"requestSignup" sender:self];
                      }];
+    */
 }
 @end
