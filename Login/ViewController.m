@@ -100,6 +100,7 @@
 
 - (IBAction)goBack:(UIButton *)sender {
     
-    [self performSegueWithIdentifier:@"logInBack" sender:self];
+   // [self performSegueWithIdentifier:@"logInBack" sender:self];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 @end
