@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72538F419FB4639007FDC8B /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D72538F319FB4638007FDC8B /* CustomSegue.m */; };
+		D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */; };
 		D7807C3619F1F8CD0082A3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3519F1F8CD0082A3DE /* main.m */; };
 		D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3819F1F8CD0082A3DE /* AppDelegate.m */; };
 		D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3B19F1F8CD0082A3DE /* ViewController.m */; };
@@ -44,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D72538F219FB4638007FDC8B /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSegue.h; path = ../CustomSegue.h; sourceTree = "<group>"; };
+		D72538F319FB4638007FDC8B /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = ../CustomSegue.m; sourceTree = "<group>"; };
+		D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing_LandscapeBG.png; sourceTree = "<group>"; };
 		D7807C3019F1F8CD0082A3DE /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7807C3419F1F8CD0082A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7807C3519F1F8CD0082A3DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +139,8 @@
 			children = (
 				D7807C3719F1F8CD0082A3DE /* AppDelegate.h */,
 				D7807C3819F1F8CD0082A3DE /* AppDelegate.m */,
+				D72538F219FB4638007FDC8B /* CustomSegue.h */,
+				D72538F319FB4638007FDC8B /* CustomSegue.m */,
 				D7807C9019FB0CF20082A3DE /* HomeViewController.h */,
 				D7807C9119FB0CF20082A3DE /* HomeViewController.m */,
 				D7807C7B19F201710082A3DE /* UserDetailsViewController.h */,
@@ -157,6 +164,7 @@
 		D7807C3319F1F8CD0082A3DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */,
 				D7807C5D19F1FA150082A3DE /* AudioToolbox.framework */,
 				D7807C5E19F1FA150082A3DE /* CFNetwork.framework */,
 				D7807C5F19F1FA150082A3DE /* CoreGraphics.framework */,
@@ -274,6 +282,7 @@
 			files = (
 				D7807C9519FB0F4E0082A3DE /* Main.storyboard in Resources */,
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
+				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +309,7 @@
 				D7807C7D19F201710082A3DE /* UserDetailsViewController.m in Sources */,
 				D7807C3619F1F8CD0082A3DE /* main.m in Sources */,
 				D7807C9219FB0CF20082A3DE /* HomeViewController.m in Sources */,
+				D72538F419FB4639007FDC8B /* CustomSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

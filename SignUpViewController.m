@@ -60,7 +60,8 @@
 }
 
 - (IBAction)cancel:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    //[self performSegueWithIdentifier:@"signUpBack" sender:self];
 }
 -(void)tapRecog{
     [self.usernameField resignFirstResponder];
