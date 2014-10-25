@@ -49,6 +49,8 @@
     // Do any additional setup after loading the view.
     [self.schoolsCollection setDataSource:self];
     [self.schoolsCollection setDelegate:self];
+    
+    self.schoolsCollection.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:1];
 }
 
 - (void)didReceiveMemoryWarning {
