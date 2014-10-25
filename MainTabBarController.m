@@ -15,25 +15,24 @@
 @implementation MainTabBarController
 
 -(void)viewWillAppear:(BOOL)animated{
-   /*
-    //tab1
-    UIImage *selectedImage = [UIImage imageNamed:@"home-tab-selected"];
-    UIImage *unselectedImage = [UIImage imageNamed:@"home2-tab"];
+   /*tab1
+    UIImage *selectedImage = [UIImage search:@"search_selected.png"];
+    UIImage *unselectedImage = [UIImage search:@"search_icon.png"];
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     
-    //tab2
-    selectedImage = [UIImage imageNamed:@"customers-tab-selected"];
-    unselectedImage = [UIImage imageNamed:@"customers-tab"];
+    tab2
+    selectedImage = [UIImage home:@"home_selected.png"];
+    unselectedImage = [UIImage home:@"home_icon.png"];
     UITabBarItem *item2 = [self.tabBar.items objectAtIndex:1];
     [item2 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     
     //tab3
-    selectedImage = [UIImage imageNamed:@"maps-tab-selected"];
-    unselectedImage = [UIImage imageNamed:@"maps-tab"];
+    selectedImage = [UIImage about:@"info_selected.png"];
+    unselectedImage = [UIImage about:@"info_icon.png"];
     UITabBarItem *item3 = [self.tabBar.items objectAtIndex:2];
     [item3 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
-*/
+    */
 }
 
 - (void)viewDidLoad {
