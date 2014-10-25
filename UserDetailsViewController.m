@@ -7,9 +7,13 @@
 //
 
 #import "UserDetailsViewController.h"
+#import "SportsCollectionViewCell.h"
+#import "PushedViewController.h"
 #import <Parse/Parse.h>
 
-@interface UserDetailsViewController ()
+@interface UserDetailsViewController (){
+    NSArray *follows;
+}
 
 @end
 
@@ -24,23 +28,28 @@
     }
 }
 -(void)viewWillAppear:(BOOL)animated{
-    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
-    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
-    self.idLabel.text = [[PFUser currentUser] objectId];
+    //self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
+    //self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
+    //self.idLabel.text = [[PFUser currentUser] objectId];
     
-    NSArray *follows = [PFUser currentUser][@"follows"];
+    follows = [PFUser currentUser][@"follows"];
     NSString *content = @"";
     
     for(int i =0; i < follows.count; i ++){
         content = [content stringByAppendingString:[NSString stringWithFormat:@"%@ \n",[follows objectAtIndex:i] ]];
     }
-    self.followsLabel.text = content;
+    [self.sportsCollection reloadData];
+   // self.followsLabel.text = content;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     //NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
     // Do any additional setup after loading the view.
+    
+    [self.sportsCollection setDelegate:self];
+    [self.sportsCollection setDataSource:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,15 +57,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([[segue identifier]isEqualToString:@"selectedSport"]){
+        
+        SportsCollectionViewCell *senderCell = (SportsCollectionViewCell *)sender;
+        PushedViewController *destVC = [segue destinationViewController];
+        
+        destVC.container =  @[senderCell.title.text];
+    
+    }
+    
 }
-*/
+
 
 - (IBAction)logOut:(id)sender {
     [PFUser logOut];
@@ -65,4 +83,23 @@
     
     NSLog(@"%s\n",[[UIApplication description]UTF8String]);
 }
+
+
+/*
+    CollectionView Methods
+*/
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return follows.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    SportsCollectionViewCell *sportsCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"sportsCell" forIndexPath:indexPath];
+    sportsCell.title.text = [follows objectAtIndex:indexPath.row];
+    sportsCell.schoolLogo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
+    
+    return sportsCell;
+
+}
+
 @end

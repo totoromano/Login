@@ -10,4 +10,6 @@
 
 @interface PushedViewController : UIViewController
 
+@property NSArray *container;
+
 @end
