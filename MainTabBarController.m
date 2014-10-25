@@ -14,12 +14,23 @@
 
 @implementation MainTabBarController
 
+
 -(void)viewWillAppear:(BOOL)animated{
     
+    [self setupItems];
+}
 
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    self.tabBar.barTintColor = [UIColor colorWithRed:63/255.0 green:71/255.0 blue:72/255.0 alpha:1];
     
-   //tab1
+    
+    
+}
+
+-(void)setupItems{
+    //tab1
     UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
     UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
@@ -48,14 +59,6 @@
     [item3 setTitle:@"Info"];
     [item3 setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor redColor] }
                          forState:UIControlStateSelected];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.tabBar.barTintColor = [UIColor colorWithRed:63/255.0 green:71/255.0 blue:72/255.0 alpha:1];
-    
-    
     
 }
 

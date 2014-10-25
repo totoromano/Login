@@ -21,14 +21,14 @@
 @implementation UserDetailsViewController
 
 
-
-
 -(void)viewDidAppear:(BOOL)animated{
     if(![PFUser currentUser]){
         [self performSegueWithIdentifier:@"requestLogin" sender:self];
     }
 }
 -(void)viewWillAppear:(BOOL)animated{
+   
+    
 //    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
 //    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
 //    self.idLabel.text = [[PFUser currentUser] objectId];
@@ -43,7 +43,7 @@
     [self.schoolsCollection reloadData];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
-                                                                    [UIColor whiteColor],NSForegroundColorAttributeName,nil];
+                                                                    [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:12],NSFontAttributeName,nil];
 }
 
 - (void)viewDidLoad {
