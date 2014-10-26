@@ -11,5 +11,6 @@
 @interface SchoolCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *schoolLogo;
 @property (weak, nonatomic) IBOutlet UILabel *schoolTitle;
+@property (strong, nonatomic) IBOutlet UIImageView *logo;
 
 @end

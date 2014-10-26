@@ -133,7 +133,7 @@
     SchoolCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SchoolCell" forIndexPath:indexPath];
     
     cell.schoolTitle.text = [follows objectAtIndex:indexPath.row];
-    cell.schoolLogo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
+    cell.schoolLogo.image = [UIImage imageNamed:@"logo-border.png"];
     
     return cell;
 

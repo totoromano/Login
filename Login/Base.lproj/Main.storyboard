@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999503377842" y="490" width="77" height="39"/>
+                                <rect key="frame" x="124" y="490" width="76.999995033778418" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -247,8 +247,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="92" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TA3-X9-kcP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="62"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lipscomb-logo.png" id="f97-I0-Hv8">
+                                                    <rect key="frame" x="23" y="8" width="46" height="51"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-border.png" id="TA3-X9-kcP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="hcZ-OP-0aA">
@@ -263,6 +267,7 @@
                                         </view>
                                         <size key="customSize" width="92" height="101"/>
                                         <connections>
+                                            <outlet property="logo" destination="TA3-X9-kcP" id="RQ6-9l-e8b"/>
                                             <outlet property="schoolLogo" destination="TA3-X9-kcP" id="y0Y-zm-hnB"/>
                                             <outlet property="schoolTitle" destination="hcZ-OP-0aA" id="2DN-Zr-jpZ"/>
                                             <segue destination="Hlq-iM-iVz" kind="push" identifier="schoolSelected" id="i2m-bN-czN"/>
@@ -444,7 +449,9 @@
     <resources>
         <image name="Signup_bg_v3.png" width="640" height="1136"/>
         <image name="landing.png" width="640" height="1136"/>
+        <image name="lipscomb-logo.png" width="761" height="736"/>
         <image name="login_bg.png" width="640" height="1136"/>
+        <image name="logo-border.png" width="151" height="151"/>
         <image name="search_icon.png" width="19" height="19"/>
         <image name="search_selected.png" width="19" height="19"/>
         <image name="selected_bttn.png" width="578" height="104"/>
@@ -460,6 +467,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vzF-Ph-PVC"/>
+        <segue reference="TxF-Yd-OkZ"/>
     </inferredMetricsTieBreakers>
 </document>
