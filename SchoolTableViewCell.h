@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SchoolTableViewCell : UITableViewCell
+@interface SchoolTableViewCell : UITableViewCell <UIActionSheetDelegate>
 @property (strong, nonatomic) IBOutlet UIImageView *logo;
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UIButton *followButton;

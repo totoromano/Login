@@ -38,13 +38,21 @@
     }else if(self.tag == 1){
         NSLog(@"cell %d that cell is NOT  selected",sender.tag);
         //self.name.textColor = [UIColor whiteColor];
+        UIActionSheet *confirmation = [[UIActionSheet alloc]initWithTitle:self.name.text delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Unfollow" otherButtonTitles:nil];
+        [confirmation showFromRect:CGRectMake(320, 480, 320, 50) inView:self.superview animated:YES];
+        
+    }
+
+
+}
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex == 0){
         self.tag = 0;
         [self.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
         [self.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
         [[PFUser currentUser] removeObject :self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }
-
-
 }
 @end
