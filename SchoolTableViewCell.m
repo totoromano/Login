@@ -23,23 +23,22 @@
 
 - (IBAction)follow:(UIButton *)sender {
     
-    UITableView *parentTable = (UITableView *)self.superview.superview;
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:sender.tag inSection:0];
+        NSLog(@"Pressed");
     
     //NSLog(@"Selected: %d and %s",sender.tag, [[parentTable description] UTF8String]);
     
-    if(self.tag == 1){
+    if(self.tag != 1){
         NSLog(@"cell %d that cell is selected", sender.tag);
         //self.name.textColor = [UIColor redColor];
-        self.tag = 0;
+        self.tag = 1;
         [self.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
         [self.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
         [[PFUser currentUser]addUniqueObject:self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
-    }else{
+    }else if(self.tag == 1){
         NSLog(@"cell %d that cell is NOT  selected",sender.tag);
         //self.name.textColor = [UIColor whiteColor];
-        self.tag = 1;
+        self.tag = 0;
         [self.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
         [self.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
         [[PFUser currentUser] removeObject :self.name.text forKey:@"follows"];

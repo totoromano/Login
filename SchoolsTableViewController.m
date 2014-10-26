@@ -83,6 +83,7 @@
     
     // Configure the cell...
     
+    
     if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
         //cell.name.textColor = [UIColor redColor];
         cell.tag = 1;
