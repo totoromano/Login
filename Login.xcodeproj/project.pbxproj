@@ -29,6 +29,8 @@
 		5995AAD319FD96A200C746F2 /* school_avatar_home-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AAD219FD96A200C746F2 /* school_avatar_home-3.png */; };
 		5995AAD519FD96FE00C746F2 /* school_avatar_home-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AAD419FD96FE00C746F2 /* school_avatar_home-4.png */; };
 		5995AAD719FD982900C746F2 /* lipscomb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AAD619FD982900C746F2 /* lipscomb-logo.png */; };
+		5995AADD19FDA5B700C746F2 /* following_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AADC19FDA5B700C746F2 /* following_bttn.png */; };
+		5995AADF19FDA6A600C746F2 /* follow_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AADE19FDA6A600C746F2 /* follow_bttn.png */; };
 		59B23A6119FC12030077815B /* home_school_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6019FC12030077815B /* home_school_placeholder.png */; };
 		59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6219FC24E30077815B /* Signup_bg_v2.png */; };
 		59B23A6519FC255B0077815B /* Signup_bg_v3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6419FC255B0077815B /* Signup_bg_v3.png */; };
@@ -43,8 +45,8 @@
 		D725390D19FD4EC5007FDC8B /* logo-border.png in Resources */ = {isa = PBXBuildFile; fileRef = D725390C19FD4EC5007FDC8B /* logo-border.png */; };
 		D725390F19FD501F007FDC8B /* lipscomb-logo-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D725390E19FD501F007FDC8B /* lipscomb-logo-1.png */; };
 		D725391219FD54C9007FDC8B /* SchoolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D725391119FD54C9007FDC8B /* SchoolTableViewCell.m */; };
-		D725391519FD9F00007FDC8B /* follow_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391319FD9F00007FDC8B /* follow_bttn.png */; };
-		D725391619FD9F00007FDC8B /* following_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391419FD9F00007FDC8B /* following_bttn.png */; };
+		D725391519FD9F00007FDC8B /* follow_bttn-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */; };
+		D725391619FD9F00007FDC8B /* following_bttn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391419FD9F00007FDC8B /* following_bttn-1.png */; };
 		D7807C3619F1F8CD0082A3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3519F1F8CD0082A3DE /* main.m */; };
 		D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3819F1F8CD0082A3DE /* AppDelegate.m */; };
 		D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3B19F1F8CD0082A3DE /* ViewController.m */; };
@@ -104,6 +106,8 @@
 		5995AAD219FD96A200C746F2 /* school_avatar_home-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school_avatar_home-3.png"; sourceTree = "<group>"; };
 		5995AAD419FD96FE00C746F2 /* school_avatar_home-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school_avatar_home-4.png"; sourceTree = "<group>"; };
 		5995AAD619FD982900C746F2 /* lipscomb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lipscomb-logo.png"; sourceTree = "<group>"; };
+		5995AADC19FDA5B700C746F2 /* following_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following_bttn.png; sourceTree = "<group>"; };
+		5995AADE19FDA6A600C746F2 /* follow_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = follow_bttn.png; sourceTree = "<group>"; };
 		59B23A6019FC12030077815B /* home_school_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_school_placeholder.png; sourceTree = "<group>"; };
 		59B23A6219FC24E30077815B /* Signup_bg_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v2.png; sourceTree = "<group>"; };
 		59B23A6419FC255B0077815B /* Signup_bg_v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v3.png; sourceTree = "<group>"; };
@@ -123,8 +127,8 @@
 		D725390E19FD501F007FDC8B /* lipscomb-logo-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lipscomb-logo-1.png"; sourceTree = "<group>"; };
 		D725391019FD54C9007FDC8B /* SchoolTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchoolTableViewCell.h; path = ../SchoolTableViewCell.h; sourceTree = "<group>"; };
 		D725391119FD54C9007FDC8B /* SchoolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SchoolTableViewCell.m; path = ../SchoolTableViewCell.m; sourceTree = "<group>"; };
-		D725391319FD9F00007FDC8B /* follow_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = follow_bttn.png; sourceTree = "<group>"; };
-		D725391419FD9F00007FDC8B /* following_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = following_bttn.png; sourceTree = "<group>"; };
+		D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "follow_bttn-1-1.png"; sourceTree = "<group>"; };
+		D725391419FD9F00007FDC8B /* following_bttn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following_bttn-1.png"; sourceTree = "<group>"; };
 		D7807C3019F1F8CD0082A3DE /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7807C3419F1F8CD0082A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7807C3519F1F8CD0082A3DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -195,9 +199,11 @@
 		59D5255119FB4EC00027C461 /* Img */ = {
 			isa = PBXGroup;
 			children = (
-				D725391319FD9F00007FDC8B /* follow_bttn.png */,
-				D725391419FD9F00007FDC8B /* following_bttn.png */,
+				D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */,
+				D725391419FD9F00007FDC8B /* following_bttn-1.png */,
 				595AD1A619FB6B3D00005E3A /* back_arrow.png */,
+				5995AADC19FDA5B700C746F2 /* following_bttn.png */,
+				5995AADE19FDA6A600C746F2 /* follow_bttn.png */,
 				59D5255419FB4FC90027C461 /* Button_default.png */,
 				59D5255519FB4FC90027C461 /* Button_selected.png */,
 				594F95B119FC534200E11A3B /* home_icon.png */,
@@ -421,11 +427,12 @@
 				595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */,
 				5995AAD719FD982900C746F2 /* lipscomb-logo.png in Resources */,
 				595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */,
-				D725391619FD9F00007FDC8B /* following_bttn.png in Resources */,
+				D725391619FD9F00007FDC8B /* following_bttn-1.png in Resources */,
 				594F95B319FC534200E11A3B /* home_icon.png in Resources */,
 				592ABAAD19FBEFB000761D0F /* x_close.png in Resources */,
 				59B23A6119FC12030077815B /* home_school_placeholder.png in Resources */,
 				595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */,
+				5995AADF19FDA6A600C746F2 /* follow_bttn.png in Resources */,
 				595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */,
 				595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */,
 				592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */,
@@ -437,8 +444,9 @@
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
 				595AD19F19FB62F200005E3A /* login_bg.png in Resources */,
-				D725391519FD9F00007FDC8B /* follow_bttn.png in Resources */,
+				D725391519FD9F00007FDC8B /* follow_bttn-1-1.png in Resources */,
 				594F95B719FC53CA00E11A3B /* info_icon.png in Resources */,
+				5995AADD19FDA5B700C746F2 /* following_bttn.png in Resources */,
 				594F95B419FC534200E11A3B /* home_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
