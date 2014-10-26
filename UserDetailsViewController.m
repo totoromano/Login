@@ -63,7 +63,7 @@
     //NSLog(@"Done with this");
     
 //    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
-//    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
+//    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"ethmail"];
 //    self.idLabel.text = [[PFUser currentUser] objectId];
     
     follows = [PFUser currentUser][@"follows"];
