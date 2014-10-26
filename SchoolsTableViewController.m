@@ -7,6 +7,7 @@
 //
 
 #import "SchoolsTableViewController.h"
+#import "SchoolTableViewCell.h"
 #import <Parse/Parse.h>
 
 @interface SchoolsTableViewController (){
@@ -24,6 +25,12 @@
     
     userFollows = [PFUser currentUser][@"follows"];
     printf("reloading table \n");
+    
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
+   // self.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
+    self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
+
     [self.tableView reloadData];
 }
 
@@ -34,6 +41,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.tableView.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,32 +63,37 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    SchoolTableViewCell *cell = (SchoolTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     
-    if([tableView cellForRowAtIndexPath:indexPath].textLabel.textColor != [UIColor redColor]){
-        [tableView cellForRowAtIndexPath:indexPath].textLabel.textColor = [UIColor redColor];
+    if(cell.name.textColor != [UIColor redColor]){
+       cell.name.textColor = [UIColor redColor];
         NSLog(@"Selected: %s\n", [[tableView cellForRowAtIndexPath:indexPath].textLabel.text UTF8String]   );
         // PFObject *selection = [schools objectAtIndex:indexPath.row];
-        [[PFUser currentUser]addUniqueObject:[tableView cellForRowAtIndexPath:indexPath].textLabel.text forKey:@"follows"];
+        [[PFUser currentUser]addUniqueObject:cell.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }else{
-        [tableView cellForRowAtIndexPath:indexPath].textLabel.textColor = [UIColor blackColor];
-        [[PFUser currentUser] removeObject :[tableView cellForRowAtIndexPath:indexPath].textLabel.text forKey:@"follows"];
+        cell.name.textColor = [UIColor blackColor];
+        [[PFUser currentUser] removeObject :cell.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    SchoolTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     
     if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
-        cell.textLabel.textColor = [UIColor redColor];
+        cell.name.textColor = [UIColor redColor];
+        [cell.followButton setTitle:@"Unfollow" forState:UIControlStateNormal];
     }else{
-        cell.textLabel.textColor = [UIColor blackColor];
+        cell.name.textColor = [UIColor whiteColor];
+        [cell.followButton setTitle:@"Follow" forState:UIControlStateNormal];
     }
     
-    cell.textLabel.text = [schools objectAtIndex:indexPath.row][@"Name"];
+    cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
+    //cell.logo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
+    cell.followButton.tag = indexPath.row;
     
     
     return cell;

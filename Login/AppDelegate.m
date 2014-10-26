@@ -40,6 +40,7 @@
     }
     
      application.applicationIconBadgeNumber = 0;
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     return YES;
 }
