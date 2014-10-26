@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *idLabel;
 @property (weak, nonatomic) IBOutlet UILabel *followsLabel;
  */
+@property (strong, nonatomic) IBOutlet UILabel *emptyLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *schoolsCollection;
 - (IBAction)logOut:(id)sender;
 @end

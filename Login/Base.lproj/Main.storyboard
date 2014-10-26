@@ -275,11 +275,19 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" id="3j4-xU-R6I">
+                                <rect key="frame" x="49" y="193" width="191" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.96510155860000002" green="1" blue="0.97574551750000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="WRH-hY-OWD"/>
                     <connections>
+                        <outlet property="emptyLabel" destination="3j4-xU-R6I" id="9ej-OP-D2W"/>
                         <outlet property="schoolsCollection" destination="qmP-9t-47y" id="R2E-IK-Ef4"/>
                         <segue destination="Cad-R1-WQ7" kind="modal" identifier="requestLogin" modalTransitionStyle="coverVertical" id="vzF-Ph-PVC"/>
                     </connections>

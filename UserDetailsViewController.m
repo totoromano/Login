@@ -78,6 +78,16 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                                     [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
+    
+    if(follows.count == 0){
+        NSLog(@"0000000");
+        //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
+        self.emptyLabel.text = @"GO FOLLOW SOME SPORTS PLEASE!!!!";
+        self.emptyLabel.layer.opacity = 1.0;
+
+    }else{
+        self.emptyLabel.layer.opacity = 0;
+    }
 
 }
 
