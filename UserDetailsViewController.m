@@ -59,6 +59,7 @@
        [self.tabBarItem setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }
                          forState:UIControlStateSelected];
     [self.tabBarController.tabBar setTintColor:[UIColor redColor]];
+   // [self.tabBarController.tabBar setBackgroundColor:[UIColor redColor]];
     //self.tabBarItem = item1;
     //NSLog(@"Done with this");
     
