@@ -84,11 +84,15 @@
     // Configure the cell...
     
     if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
-        cell.name.textColor = [UIColor redColor];
-        [cell.followButton setTitle:@"Unfollow" forState:UIControlStateNormal];
+        //cell.name.textColor = [UIColor redColor];
+        cell.tag = 1;
+        [cell.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
+        [cell.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
     }else{
-        cell.name.textColor = [UIColor whiteColor];
-        [cell.followButton setTitle:@"Follow" forState:UIControlStateNormal];
+       // cell.name.textColor = [UIColor whiteColor];
+        cell.tag = 0;
+        [cell.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
+        [cell.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
     }
     
     cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];

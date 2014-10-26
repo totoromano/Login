@@ -28,16 +28,20 @@
     
     //NSLog(@"Selected: %d and %s",sender.tag, [[parentTable description] UTF8String]);
     
-    if(self.name.textColor != [UIColor redColor]){
+    if(self.tag == 1){
         NSLog(@"cell %d that cell is selected", sender.tag);
-        self.name.textColor = [UIColor redColor];
-        [self.followButton setTitle:@"Unfollow" forState:UIControlStateNormal];
+        //self.name.textColor = [UIColor redColor];
+        self.tag = 0;
+        [self.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
+        [self.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
         [[PFUser currentUser]addUniqueObject:self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }else{
         NSLog(@"cell %d that cell is NOT  selected",sender.tag);
-        self.name.textColor = [UIColor whiteColor];
-        [self.followButton setTitle:@"Follow" forState:UIControlStateNormal];
+        //self.name.textColor = [UIColor whiteColor];
+        self.tag = 1;
+        [self.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
+        [self.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
         [[PFUser currentUser] removeObject :self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }
