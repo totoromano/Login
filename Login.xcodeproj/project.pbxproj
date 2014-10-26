@@ -23,8 +23,8 @@
 		595AD1A919FB6DAE00005E3A /* signup_bttn_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */; };
 		595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1AA19FB6F4E00005E3A /* selected_bttn.png */; };
 		595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */ = {isa = PBXBuildFile; fileRef = 595AD1AB19FB6F4E00005E3A /* white_bttn.png */; };
-		5995AACB19FD663900C746F2 /* school_border.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACA19FD663900C746F2 /* school_border.png */; };
-		5995AACD19FD66B400C746F2 /* school_avatar_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACC19FD66B400C746F2 /* school_avatar_list.png */; };
+		5995AACB19FD663900C746F2 /* school_avatar_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACA19FD663900C746F2 /* school_avatar_home.png */; };
+		5995AACF19FD6BB400C746F2 /* school_avatar_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACE19FD6BB400C746F2 /* school_avatar_list.png */; };
 		59B23A6119FC12030077815B /* home_school_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6019FC12030077815B /* home_school_placeholder.png */; };
 		59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6219FC24E30077815B /* Signup_bg_v2.png */; };
 		59B23A6519FC255B0077815B /* Signup_bg_v3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6419FC255B0077815B /* Signup_bg_v3.png */; };
@@ -92,8 +92,8 @@
 		595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup_bttn_selected.png; sourceTree = "<group>"; };
 		595AD1AA19FB6F4E00005E3A /* selected_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selected_bttn.png; sourceTree = "<group>"; };
 		595AD1AB19FB6F4E00005E3A /* white_bttn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_bttn.png; sourceTree = "<group>"; };
-		5995AACA19FD663900C746F2 /* school_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_border.png; sourceTree = "<group>"; };
-		5995AACC19FD66B400C746F2 /* school_avatar_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_avatar_list.png; sourceTree = "<group>"; };
+		5995AACA19FD663900C746F2 /* school_avatar_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_avatar_home.png; sourceTree = "<group>"; };
+		5995AACE19FD6BB400C746F2 /* school_avatar_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_avatar_list.png; sourceTree = "<group>"; };
 		59B23A6019FC12030077815B /* home_school_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_school_placeholder.png; sourceTree = "<group>"; };
 		59B23A6219FC24E30077815B /* Signup_bg_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v2.png; sourceTree = "<group>"; };
 		59B23A6419FC255B0077815B /* Signup_bg_v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v3.png; sourceTree = "<group>"; };
@@ -185,15 +185,15 @@
 			children = (
 				D725390E19FD501F007FDC8B /* lipscomb-logo.png */,
 				D725390C19FD4EC5007FDC8B /* logo-border.png */,
-				5995AACA19FD663900C746F2 /* school_border.png */,
+				5995AACA19FD663900C746F2 /* school_avatar_home.png */,
 				59D5255419FB4FC90027C461 /* Button_default.png */,
 				595AD1A819FB6DAE00005E3A /* signup_bttn_selected.png */,
 				594F95B119FC534200E11A3B /* home_icon.png */,
 				594F95B219FC534200E11A3B /* home_selected.png */,
 				594F95AD19FC529500E11A3B /* search_icon.png */,
-				5995AACC19FD66B400C746F2 /* school_avatar_list.png */,
 				594F95B519FC53CA00E11A3B /* info_icon.png */,
 				594F95B619FC53CA00E11A3B /* info_selected.png */,
+				5995AACE19FD6BB400C746F2 /* school_avatar_list.png */,
 				594F95AE19FC529500E11A3B /* search_selected.png */,
 				595AD1A619FB6B3D00005E3A /* back_arrow.png */,
 				59B23A6419FC255B0077815B /* Signup_bg_v3.png */,
@@ -389,10 +389,9 @@
 				59B23A6519FC255B0077815B /* Signup_bg_v3.png in Resources */,
 				D7807C9519FB0F4E0082A3DE /* Main.storyboard in Resources */,
 				59D5255719FB4FC90027C461 /* Button_selected.png in Resources */,
-				5995AACB19FD663900C746F2 /* school_border.png in Resources */,
+				5995AACB19FD663900C746F2 /* school_avatar_home.png in Resources */,
 				594F95B819FC53CA00E11A3B /* info_selected.png in Resources */,
 				595AD1A919FB6DAE00005E3A /* signup_bttn_selected.png in Resources */,
-				5995AACD19FD66B400C746F2 /* school_avatar_list.png in Resources */,
 				59D5255619FB4FC90027C461 /* Button_default.png in Resources */,
 				59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */,
 				595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */,
@@ -409,6 +408,7 @@
 				595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */,
 				595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */,
 				592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */,
+				5995AACF19FD6BB400C746F2 /* school_avatar_list.png in Resources */,
 				594F95AF19FC529500E11A3B /* search_icon.png in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
