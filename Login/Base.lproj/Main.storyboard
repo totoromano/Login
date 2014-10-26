@@ -367,7 +367,7 @@
         <scene sceneID="wXd-2d-GUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l1n-qT-waX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="SYf-eG-SEH"/>
+                    <tabBarItem key="tabBarItem" title="" image="search_icon.png" selectedImage="search_selected.png" id="SYf-eG-SEH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKP-ce-hcp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -445,6 +445,8 @@
         <image name="Signup_bg_v3.png" width="640" height="1136"/>
         <image name="landing.png" width="640" height="1136"/>
         <image name="login_bg.png" width="640" height="1136"/>
+        <image name="search_icon.png" width="19" height="19"/>
+        <image name="search_selected.png" width="19" height="19"/>
         <image name="selected_bttn.png" width="578" height="104"/>
         <image name="signup_bttn.png" width="578" height="104"/>
         <image name="signup_bttn_selected.png" width="578" height="104"/>

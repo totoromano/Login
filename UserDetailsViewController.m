@@ -26,25 +26,40 @@
         [self performSegueWithIdentifier:@"requestLogin" sender:self];
     }
     
-   // NSLog(@"viewDidAppear");
-}
--(void)viewWillDisappear:(BOOL)animated{
-    self.title = @"";
-    
-}
--(void)viewWillAppear:(BOOL)animated{
-   //NSLog(@"viewWillAppear");
-    self.title = @"Home";
-    
+    NSString *tabbarItemTitle = self.tabBarItem.title;
+    NSLog(@"viewDidAppear with %s and %s", [tabbarItemTitle UTF8String], [[self.tabBarItem description]UTF8String]);
     UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
     UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = self.tabBarItem;
-    [item1 initWithTitle:@"Search" image:unselectedImage selectedImage:selectedImage];
-    //[item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
+    // [item1 initWithTitle:@"Search" image:unselectedImage selectedImage:selectedImage];
+    [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 setTitle:@"Search"];
-    self.tabBarItem.title = @"Search";
+    
     [item1 setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }
                          forState:UIControlStateSelected];
+    
+    self.tabBarItem = item1;
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    //self.title = @"";
+    //[super viewWillDisappear:NO];
+   // self.tabBarController.tabBar
+    NSLog(@"viewWillDisappear");
+    
+    
+   
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+   NSLog(@"viewWillAppear");
+    self.title = @"Home";
+    self.tabBarItem.title = @"Search";
+    
+    
+       [self.tabBarItem setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }
+                         forState:UIControlStateSelected];
+    [self.tabBarController.tabBar setTintColor:[UIColor redColor]];
+    //self.tabBarItem = item1;
     //NSLog(@"Done with this");
     
 //    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
@@ -62,10 +77,11 @@
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                                     [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
+
 }
 
 - (void)viewDidLoad {
-    // NSLog(@"viewDidLoad");
+    NSLog(@"viewDidLoad");
     [super viewDidLoad];
     //NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
     // Do any additional setup after loading the view.
@@ -73,6 +89,7 @@
     [self.schoolsCollection setDelegate:self];
     
     self.schoolsCollection.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
+    
 }
 
 - (void)didReceiveMemoryWarning {
