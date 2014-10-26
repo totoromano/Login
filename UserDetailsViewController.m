@@ -25,9 +25,27 @@
     if(![PFUser currentUser]){
         [self performSegueWithIdentifier:@"requestLogin" sender:self];
     }
+    
+   // NSLog(@"viewDidAppear");
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    self.title = @"";
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
-   
+   //NSLog(@"viewWillAppear");
+    self.title = @"Home";
+    
+    UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
+    UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
+    UITabBarItem *item1 = self.tabBarItem;
+    [item1 initWithTitle:@"Search" image:unselectedImage selectedImage:selectedImage];
+    //[item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
+    //[item1 setTitle:@"Search"];
+    self.tabBarItem.title = @"Search";
+    [item1 setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }
+                         forState:UIControlStateSelected];
+    //NSLog(@"Done with this");
     
 //    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
 //    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"email"];
@@ -47,6 +65,7 @@
 }
 
 - (void)viewDidLoad {
+    // NSLog(@"viewDidLoad");
     [super viewDidLoad];
     //NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
     // Do any additional setup after loading the view.
@@ -82,7 +101,7 @@
     [self performSegueWithIdentifier:@"requestLogin" sender:self];
     //[self.navigationController popToRootViewControllerAnimated:NO];
     
-    NSLog(@"%s\n",[[UIApplication description]UTF8String]);
+   // NSLog(@"%s\n",[[UIApplication description]UTF8String]);
 }
 
 

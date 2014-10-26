@@ -34,6 +34,7 @@
 		D725390019FB5C37007FDC8B /* SchoolCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D72538FF19FB5C37007FDC8B /* SchoolCollectionViewCell.m */; };
 		D725390219FB5D7A007FDC8B /* lipscomb-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D725390119FB5D7A007FDC8B /* lipscomb-logo.png */; };
 		D725390519FC439D007FDC8B /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D725390419FC439D007FDC8B /* MainTabBarController.m */; };
+		D725390B19FD28E8007FDC8B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D725390A19FD28E8007FDC8B /* InfoViewController.m */; };
 		D7807C3619F1F8CD0082A3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3519F1F8CD0082A3DE /* main.m */; };
 		D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3819F1F8CD0082A3DE /* AppDelegate.m */; };
 		D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3B19F1F8CD0082A3DE /* ViewController.m */; };
@@ -101,6 +102,8 @@
 		D725390119FB5D7A007FDC8B /* lipscomb-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lipscomb-logo.png"; sourceTree = "<group>"; };
 		D725390319FC439D007FDC8B /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabBarController.h; path = ../MainTabBarController.h; sourceTree = "<group>"; };
 		D725390419FC439D007FDC8B /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabBarController.m; path = ../MainTabBarController.m; sourceTree = "<group>"; };
+		D725390919FD28E8007FDC8B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = ../InfoViewController.h; sourceTree = "<group>"; };
+		D725390A19FD28E8007FDC8B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = ../InfoViewController.m; sourceTree = "<group>"; };
 		D7807C3019F1F8CD0082A3DE /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7807C3419F1F8CD0082A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7807C3519F1F8CD0082A3DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				D72538F319FB4638007FDC8B /* CustomSegue.m */,
 				D7807C9019FB0CF20082A3DE /* HomeViewController.h */,
 				D7807C9119FB0CF20082A3DE /* HomeViewController.m */,
+				D725390919FD28E8007FDC8B /* InfoViewController.h */,
+				D725390A19FD28E8007FDC8B /* InfoViewController.m */,
 				D725390319FC439D007FDC8B /* MainTabBarController.h */,
 				D725390419FC439D007FDC8B /* MainTabBarController.m */,
 				D7807C7B19F201710082A3DE /* UserDetailsViewController.h */,
@@ -413,6 +418,7 @@
 			files = (
 				D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */,
 				D7807C8519F302ED0082A3DE /* SchoolsTableViewController.m in Sources */,
+				D725390B19FD28E8007FDC8B /* InfoViewController.m in Sources */,
 				D7807C8019F204910082A3DE /* SignUpViewController.m in Sources */,
 				D7807C8C19F9BAB40082A3DE /* PushedViewController.m in Sources */,
 				D725390019FB5C37007FDC8B /* SchoolCollectionViewCell.m in Sources */,

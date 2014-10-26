@@ -1,30 +1,23 @@
 //
-//  PushedViewController.m
+//  InfoViewController.m
 //  Login
 //
-//  Created by Dev on 10/23/14.
+//  Created by Dev on 10/26/14.
 //  Copyright (c) 2014 Dev. All rights reserved.
 //
 
-#import "PushedViewController.h"
+#import "InfoViewController.h"
+#import <Parse/Parse.h>
 
-@interface PushedViewController ()
+@interface InfoViewController ()
 
 @end
 
-@implementation PushedViewController
-
--(void)viewWillAppear:(BOOL)animated{
-    self.hidesBottomBarWhenPushed = YES;
-    self.title = [_container objectAtIndex:0];
-
-}
+@implementation InfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //self.title = [_container objectAtIndex:0];
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,4 +35,9 @@
 }
 */
 
+- (IBAction)logout:(UIButton *)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"logout" sender:self];
+    //[self.tabBarController setSelectedIndex:0];
+}
 @end

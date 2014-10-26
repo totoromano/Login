@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="78.999998226122528" y="275" width="160" height="27"/>
+                                <rect key="frame" x="79" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999916608316" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999503377842" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -273,13 +273,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="WRH-hY-OWD">
-                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="8UP-dC-pAW">
-                            <connections>
-                                <action selector="logOut:" destination="mm1-HS-Hyb" id="S1U-Yr-OWn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Home" id="WRH-hY-OWD"/>
                     <connections>
                         <outlet property="schoolsCollection" destination="qmP-9t-47y" id="R2E-IK-Ef4"/>
                         <segue destination="Cad-R1-WQ7" kind="modal" identifier="requestLogin" modalTransitionStyle="coverVertical" id="vzF-Ph-PVC"/>
@@ -313,10 +307,10 @@
             </objects>
             <point key="canvasLocation" x="2810" y="-355"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="kqW-Ns-VAj">
             <objects>
-                <viewController id="wk3-ef-fhD" sceneMemberID="viewController">
+                <viewController id="wk3-ef-fhD" customClass="InfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTj-iv-Sfj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,6 +322,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NcI-xG-TUC">
+                                <rect key="frame" x="124" y="99" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="wk3-ef-fhD" eventType="touchUpInside" id="f8v-VV-XIL"/>
+                                    <segue destination="Cad-R1-WQ7" kind="modal" identifier="logout" modalTransitionStyle="crossDissolve" id="TxF-Yd-OkZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -362,7 +367,7 @@
         <scene sceneID="wXd-2d-GUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l1n-qT-waX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="SYf-eG-SEH"/>
+                    <tabBarItem key="tabBarItem" title="" id="SYf-eG-SEH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKP-ce-hcp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
