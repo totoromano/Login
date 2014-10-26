@@ -25,6 +25,8 @@
     // Do any additional setup after loading the view.
     //self.title = [_container objectAtIndex:0];
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    [self.navigationItem setHidesBackButton:YES animated:NO];// = nil;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,4 +44,7 @@
 }
 */
 
+- (IBAction)manualBack:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 @end

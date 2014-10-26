@@ -10,5 +10,6 @@
 
 @interface PushedViewController : UIViewController
 @property NSArray *container;
+- (IBAction)manualBack:(id)sender;
 
 @end

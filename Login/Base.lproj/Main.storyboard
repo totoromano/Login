@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="124" y="490" width="76.999995033778418" height="39"/>
+                                <rect key="frame" x="123.99999503377842" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -288,7 +288,7 @@
             </objects>
             <point key="canvasLocation" x="2305" y="-355"/>
         </scene>
-        <!--View 1.1-->
+        <!--Pushed View Controller-->
         <scene sceneID="Az8-S5-uq3">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="Hlq-iM-iVz" customClass="PushedViewController" sceneMemberID="viewController">
@@ -306,7 +306,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="View 1.1" id="Qzy-XQ-STN"/>
+                    <navigationItem key="navigationItem" id="Qzy-XQ-STN">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="Rkf-Xq-hrk">
+                            <connections>
+                                <action selector="manualBack:" destination="Hlq-iM-iVz" id="rvL-qA-M1e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0q0-jk-ydZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -467,6 +473,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TxF-Yd-OkZ"/>
+        <segue reference="vzF-Ph-PVC"/>
     </inferredMetricsTieBreakers>
 </document>
