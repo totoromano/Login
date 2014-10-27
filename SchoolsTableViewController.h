@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SchoolsTableViewController : UITableViewController
-
+@interface SchoolsTableViewController : UITableViewController <UISearchBarDelegate>
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+-(void)tapRecog;
 @end

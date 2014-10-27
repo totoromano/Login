@@ -13,6 +13,7 @@
 @interface SchoolsTableViewController (){
     NSMutableArray *schools;
     NSArray *userFollows;
+    NSMutableArray *filteredArray;
 }
 @end
 
@@ -26,12 +27,21 @@
     userFollows = [PFUser currentUser][@"follows"];
     printf("reloading table \n");
     
+    
+    
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
    // self.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
-
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
+    [self.view addGestureRecognizer:tap];
+    
     [self.tableView reloadData];
+}
+
+-(void)tapRecog{
+    [self.searchBar resignFirstResponder];
 }
 
 - (void)viewDidLoad {
@@ -43,6 +53,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.tableView.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
+   // self.navigationController.navigationItem.titleView = [[UISearchBar alloc]init];
+    [self.searchBar setDelegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,6 +71,10 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
+    
+    if(self.searchBar.text.length > 0){
+        return filteredArray.count;
+    }else
     return schools.count;
 }
 
@@ -82,26 +98,59 @@
     SchoolTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    
-    if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
-        //cell.name.textColor = [UIColor redColor];
-        cell.tag = 1;
-        [cell.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
-        [cell.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
+    if(self.searchBar.text.length > 0){
+        if([userFollows containsObject:[filteredArray objectAtIndex:indexPath.row][@"Name"]]){
+            //cell.name.textColor = [UIColor redColor];
+            cell.tag = 1;
+            [cell.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
+            [cell.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
+        }else{
+            // cell.name.textColor = [UIColor whiteColor];
+            cell.tag = 0;
+            [cell.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
+            [cell.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
+        }
+        
+        cell.name.text = [filteredArray objectAtIndex:indexPath.row][@"Name"];
+        //cell.logo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
+        cell.followButton.tag = indexPath.row;
+
     }else{
-       // cell.name.textColor = [UIColor whiteColor];
-        cell.tag = 0;
-        [cell.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
-        [cell.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
+    
+        if([userFollows containsObject:[schools objectAtIndex:indexPath.row][@"Name"]]){
+            //cell.name.textColor = [UIColor redColor];
+            cell.tag = 1;
+            [cell.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
+            [cell.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
+        }else{
+            // cell.name.textColor = [UIColor whiteColor];
+            cell.tag = 0;
+            [cell.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
+            [cell.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
+        }
+    
+        cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
+        //cell.logo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
+        cell.followButton.tag = indexPath.row;
+    
     }
-    
-    cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
-    //cell.logo.image = [UIImage imageNamed:@"lipscomb-logo.png"];
-    cell.followButton.tag = indexPath.row;
-    
-    
     return cell;
+}
+
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    NSLog(@"Changed");
+    filteredArray = (NSMutableArray *)[schools filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"Name contains[c] %@", self.searchBar.text]];
+    [self.tableView reloadData];
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [searchBar resignFirstResponder];
+}
+
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
+    NSLog(@"Done editing");
+    
+    return YES;
 }
 
 /*
