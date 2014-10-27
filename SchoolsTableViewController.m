@@ -134,11 +134,13 @@
         cell.followButton.tag = indexPath.row;
     
     }
+    
     return cell;
 }
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     NSLog(@"Changed");
+    userFollows = [PFUser currentUser][@"follows"];
     filteredArray = (NSMutableArray *)[schools filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"Name contains[c] %@", self.searchBar.text]];
     [self.tableView reloadData];
 }
@@ -149,7 +151,8 @@
 
 -(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
     NSLog(@"Done editing");
-    
+    userFollows = [PFUser currentUser][@"follows"];
+    [self.tableView reloadData];
     return YES;
 }
 
