@@ -361,6 +361,85 @@
             </objects>
             <point key="canvasLocation" x="1788" y="954"/>
         </scene>
+        <!--test List-->
+        <scene sceneID="Nph-4T-jbl">
+            <objects>
+                <viewController id="hHf-oy-UzO" customClass="TesListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X0d-mz-QyD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_icon.png" id="Bsr-xC-RN1">
+                                <rect key="frame" x="0.0" y="20" width="44" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Search . . ." clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" id="ryX-lL-wnO">
+                                <rect key="frame" x="52" y="20" width="268" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" id="gNw-Mk-nnx">
+                                <rect key="frame" x="0.0" y="69" width="320" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SchoolCell" rowHeight="91" id="Yd9-mq-9dr" customClass="SchoolTableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yd9-mq-9dr" id="Xan-fq-ctZ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dSD-TN-fb3">
+                                                    <rect key="frame" x="20" y="8" width="53" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" id="7lp-SI-ETA">
+                                                    <rect key="frame" x="87" y="13" width="127" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="school_avatar_list.png" id="MNn-43-ZVZ">
+                                                    <rect key="frame" x="8" y="0.0" width="77" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oa0-pC-tSk">
+                                                    <rect key="frame" x="227" y="29" width="73" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" backgroundImage="follow_bttn.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="follow:" destination="Yd9-mq-9dr" eventType="touchUpInside" id="L0v-IT-4Sa"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="followButton" destination="oa0-pC-tSk" id="b7c-bI-m0K"/>
+                                            <outlet property="logo" destination="dSD-TN-fb3" id="Gqv-Cs-T1c"/>
+                                            <outlet property="name" destination="7lp-SI-ETA" id="Ddc-zX-Vc3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="test List" id="AhN-Mt-lMS"/>
+                    <connections>
+                        <outlet property="searchBox" destination="ryX-lL-wnO" id="s65-DZ-H8D"/>
+                        <outlet property="tableView" destination="gNw-Mk-nnx" id="gcb-EL-l52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZd-xz-U7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788" y="1631"/>
+        </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="p5u-I4-juI">
             <objects>
@@ -376,6 +455,7 @@
                         <segue destination="l1n-qT-waX" kind="relationship" relationship="viewControllers" id="njm-Bo-g2x"/>
                         <segue destination="wk3-ef-fhD" kind="relationship" relationship="viewControllers" id="T8G-kF-SIp"/>
                         <segue destination="l9A-eA-GXI" kind="relationship" relationship="viewControllers" id="l6u-Tn-24c"/>
+                        <segue destination="hHf-oy-UzO" kind="relationship" relationship="viewControllers" id="oWb-EV-Wwp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-PY-cnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -413,11 +493,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="minimal" id="lNA-bN-bpx">
+                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="black" searchBarStyle="prominent" id="lNA-bN-bpx">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="tintColor" red="0.96510155860000002" green="1" blue="0.97574551750000005" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="barTintColor" red="0.96510155860000002" green="1" blue="0.97574551750000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="2"/>
                             <textInputTraits key="textInputTraits" spellCheckingType="yes"/>
                         </searchBar>
                         <prototypes>

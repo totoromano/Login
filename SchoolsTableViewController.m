@@ -37,6 +37,8 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
     [self.view addGestureRecognizer:tap];
     
+    self.searchBar.layer.frame = CGRectMake(0, 64, 320, 60);
+    
     [self.tableView reloadData];
 }
 

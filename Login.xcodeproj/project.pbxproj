@@ -47,6 +47,7 @@
 		D725391219FD54C9007FDC8B /* SchoolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D725391119FD54C9007FDC8B /* SchoolTableViewCell.m */; };
 		D725391519FD9F00007FDC8B /* follow_bttn-1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */; };
 		D725391619FD9F00007FDC8B /* following_bttn-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D725391419FD9F00007FDC8B /* following_bttn-1.png */; };
+		D725391919FEEDB6007FDC8B /* TesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D725391819FEEDB6007FDC8B /* TesListViewController.m */; };
 		D7807C3619F1F8CD0082A3DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3519F1F8CD0082A3DE /* main.m */; };
 		D7807C3919F1F8CD0082A3DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3819F1F8CD0082A3DE /* AppDelegate.m */; };
 		D7807C3C19F1F8CD0082A3DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7807C3B19F1F8CD0082A3DE /* ViewController.m */; };
@@ -129,6 +130,8 @@
 		D725391119FD54C9007FDC8B /* SchoolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SchoolTableViewCell.m; path = ../SchoolTableViewCell.m; sourceTree = "<group>"; };
 		D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "follow_bttn-1-1.png"; sourceTree = "<group>"; };
 		D725391419FD9F00007FDC8B /* following_bttn-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "following_bttn-1.png"; sourceTree = "<group>"; };
+		D725391719FEEDB6007FDC8B /* TesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TesListViewController.h; path = ../TesListViewController.h; sourceTree = "<group>"; };
+		D725391819FEEDB6007FDC8B /* TesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TesListViewController.m; path = ../TesListViewController.m; sourceTree = "<group>"; };
 		D7807C3019F1F8CD0082A3DE /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7807C3419F1F8CD0082A3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7807C3519F1F8CD0082A3DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 				D7807C8419F302ED0082A3DE /* SchoolsTableViewController.m */,
 				D725391019FD54C9007FDC8B /* SchoolTableViewCell.h */,
 				D725391119FD54C9007FDC8B /* SchoolTableViewCell.m */,
+				D725391719FEEDB6007FDC8B /* TesListViewController.h */,
+				D725391819FEEDB6007FDC8B /* TesListViewController.m */,
 				D7807C8A19F9BAB40082A3DE /* PushedViewController.h */,
 				D7807C8B19F9BAB40082A3DE /* PushedViewController.m */,
 				D7807C4019F1F8CD0082A3DE /* Images.xcassets */,
@@ -478,6 +483,7 @@
 				D7807C3619F1F8CD0082A3DE /* main.m in Sources */,
 				D7807C9219FB0CF20082A3DE /* HomeViewController.m in Sources */,
 				D72538F419FB4639007FDC8B /* CustomSegue.m in Sources */,
+				D725391919FEEDB6007FDC8B /* TesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
