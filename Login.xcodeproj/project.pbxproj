@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		592ABAAD19FBEFB000761D0F /* x_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 592ABAAB19FBEFB000761D0F /* x_close.png */; };
 		592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 592ABAAC19FBEFB000761D0F /* x_pressed.png */; };
-		594F95AF19FC529500E11A3B /* search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 594F95AD19FC529500E11A3B /* search_icon.png */; };
+		593117A219FEF53D00DF69FC /* search_icon-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 593117A119FEF53C00DF69FC /* search_icon-2.png */; };
+		593117A419FEF60500DF69FC /* search_icon-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 593117A319FEF60500DF69FC /* search_icon-3.png */; };
+		593117A619FEF6AD00DF69FC /* search_icon-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 593117A519FEF6AD00DF69FC /* search_icon-4.png */; };
+		593117A819FEFABF00DF69FC /* search_icon-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 593117A719FEFABF00DF69FC /* search_icon-5.png */; };
+		593117AA19FEFBA400DF69FC /* search_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 593117A919FEFBA400DF69FC /* search_icon.png */; };
+		594F95AF19FC529500E11A3B /* search_icon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 594F95AD19FC529500E11A3B /* search_icon-1.png */; };
 		594F95B019FC529500E11A3B /* search_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 594F95AE19FC529500E11A3B /* search_selected.png */; };
 		594F95B319FC534200E11A3B /* home_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 594F95B119FC534200E11A3B /* home_icon.png */; };
 		594F95B419FC534200E11A3B /* home_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 594F95B219FC534200E11A3B /* home_selected.png */; };
@@ -87,7 +92,12 @@
 /* Begin PBXFileReference section */
 		592ABAAB19FBEFB000761D0F /* x_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_close.png; sourceTree = "<group>"; };
 		592ABAAC19FBEFB000761D0F /* x_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x_pressed.png; sourceTree = "<group>"; };
-		594F95AD19FC529500E11A3B /* search_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_icon.png; sourceTree = "<group>"; };
+		593117A119FEF53C00DF69FC /* search_icon-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon-2.png"; sourceTree = "<group>"; };
+		593117A319FEF60500DF69FC /* search_icon-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon-3.png"; sourceTree = "<group>"; };
+		593117A519FEF6AD00DF69FC /* search_icon-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon-4.png"; sourceTree = "<group>"; };
+		593117A719FEFABF00DF69FC /* search_icon-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon-5.png"; sourceTree = "<group>"; };
+		593117A919FEFBA400DF69FC /* search_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_icon.png; sourceTree = "<group>"; };
+		594F95AD19FC529500E11A3B /* search_icon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon-1.png"; sourceTree = "<group>"; };
 		594F95AE19FC529500E11A3B /* search_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_selected.png; sourceTree = "<group>"; };
 		594F95B119FC534200E11A3B /* home_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_icon.png; sourceTree = "<group>"; };
 		594F95B219FC534200E11A3B /* home_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_selected.png; sourceTree = "<group>"; };
@@ -224,7 +234,12 @@
 				5995AAD419FD96FE00C746F2 /* school_avatar_home-4.png */,
 				5995AAD219FD96A200C746F2 /* school_avatar_home-3.png */,
 				5995AACE19FD6BB400C746F2 /* school_avatar_list.png */,
-				594F95AD19FC529500E11A3B /* search_icon.png */,
+				593117A919FEFBA400DF69FC /* search_icon.png */,
+				593117A719FEFABF00DF69FC /* search_icon-5.png */,
+				593117A519FEF6AD00DF69FC /* search_icon-4.png */,
+				593117A319FEF60500DF69FC /* search_icon-3.png */,
+				593117A119FEF53C00DF69FC /* search_icon-2.png */,
+				594F95AD19FC529500E11A3B /* search_icon-1.png */,
 				594F95AE19FC529500E11A3B /* search_selected.png */,
 				595AD1AA19FB6F4E00005E3A /* selected_bttn.png */,
 				59B23A6219FC24E30077815B /* Signup_bg_v2.png */,
@@ -424,6 +439,7 @@
 				59D5255619FB4FC90027C461 /* Button_default.png in Resources */,
 				59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */,
 				595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */,
+				593117A219FEF53D00DF69FC /* search_icon-2.png in Resources */,
 				594F95B019FC529500E11A3B /* search_selected.png in Resources */,
 				D725390D19FD4EC5007FDC8B /* logo-border.png in Resources */,
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
@@ -432,19 +448,23 @@
 				595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */,
 				5995AAD719FD982900C746F2 /* lipscomb-logo.png in Resources */,
 				595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */,
+				593117A819FEFABF00DF69FC /* search_icon-5.png in Resources */,
 				D725391619FD9F00007FDC8B /* following_bttn-1.png in Resources */,
 				594F95B319FC534200E11A3B /* home_icon.png in Resources */,
 				592ABAAD19FBEFB000761D0F /* x_close.png in Resources */,
 				59B23A6119FC12030077815B /* home_school_placeholder.png in Resources */,
 				595AD1AD19FB6F4E00005E3A /* white_bttn.png in Resources */,
 				5995AADF19FDA6A600C746F2 /* follow_bttn.png in Resources */,
+				593117A419FEF60500DF69FC /* search_icon-3.png in Resources */,
 				595AD1AC19FB6F4E00005E3A /* selected_bttn.png in Resources */,
 				595AD1A519FB6A4500005E3A /* signup_bttn.png in Resources */,
 				592ABAAE19FBEFB000761D0F /* x_pressed.png in Resources */,
+				593117AA19FEFBA400DF69FC /* search_icon.png in Resources */,
+				593117A619FEF6AD00DF69FC /* search_icon-4.png in Resources */,
 				5995AAD519FD96FE00C746F2 /* school_avatar_home-4.png in Resources */,
 				5995AAD319FD96A200C746F2 /* school_avatar_home-3.png in Resources */,
 				5995AACF19FD6BB400C746F2 /* school_avatar_list.png in Resources */,
-				594F95AF19FC529500E11A3B /* search_icon.png in Resources */,
+				594F95AF19FC529500E11A3B /* search_icon-1.png in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
