@@ -373,7 +373,7 @@
                                 <rect key="frame" x="0.0" y="20" width="44" height="41"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Search . . ." clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="unlessEditing" id="ryX-lL-wnO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" placeholder="Search . . ." minimumFontSize="17" clearButtonMode="unlessEditing" id="ryX-lL-wnO">
                                 <rect key="frame" x="52" y="20" width="268" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText"/>
