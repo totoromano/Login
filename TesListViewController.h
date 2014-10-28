@@ -12,5 +12,6 @@
 @interface TesListViewController : UIViewController <UITableViewDataSource, UITableViewDelegate,UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *searchBox;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UILabel *noResults;
 
 @end

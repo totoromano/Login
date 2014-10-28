@@ -25,6 +25,7 @@
     PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
     [querySchools orderByAscending:@"Name"];
     schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
+    self.noResults.layer.opacity = 0.0;
     
 }
 
@@ -33,7 +34,7 @@
     
     [self.view setBackgroundColor:[UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95]];
     self.searchBox.textColor = [UIColor whiteColor];
-    self.searchBox.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Search ..." attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.searchBox.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Search" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
@@ -54,7 +55,10 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SchoolTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"SchoolCell" forIndexPath:indexPath];
     
+    
+    
     if(self.searchBox.text.length > 0 ){
+        NSLog(@"Count: %d ",filteredSchools.count);
         if([follows containsObject:[filteredSchools objectAtIndex:indexPath.row][@"Name"]]){
             //cell.name.textColor = [UIColor redColor];
             cell.tag = 1;
@@ -66,7 +70,6 @@
             [cell.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
             [cell.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
         }
-        
         cell.name.text = [filteredSchools objectAtIndex:indexPath.row][@"Name"];
     }else{
         
@@ -85,6 +88,8 @@
         cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
     }
     cell.followButton.tag = indexPath.row;
+    
+    
     return cell;
 }
 
@@ -94,6 +99,14 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    if(filteredSchools.count == 0 && self.searchBox.text.length > 0){
+        self.noResults.layer.opacity = 1.0;
+    }else{
+        self.noResults.layer.opacity = 0.0;
+    }
+    
+    
     if(self.searchBox.text.length > 0){
         return filteredSchools.count;
     }else
@@ -113,9 +126,10 @@
 }
 
 -(void)textChanged:(UITextField *)textfield{
-    NSLog(@"Changing");
+   
     follows = [PFUser currentUser][@"follows"];
     filteredSchools = [schools filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"Name contains[c] %@", self.searchBox.text]];
+     NSLog(@"Changing and %d",filteredSchools.count);
     [self.tableView reloadData];
     
     

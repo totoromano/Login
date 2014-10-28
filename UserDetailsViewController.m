@@ -45,10 +45,7 @@
     //[super viewWillDisappear:NO];
    // self.tabBarController.tabBar
     NSLog(@"viewWillDisappear");
-    
-    
-   
-    
+ 
 }
 -(void)viewWillAppear:(BOOL)animated{
    NSLog(@"viewWillAppear");
