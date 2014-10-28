@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="78.999999728426346" y="275" width="160" height="27"/>
+                                <rect key="frame" x="78.999999364813078" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999846064584" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999391069403" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -460,7 +460,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZd-xz-U7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1805" y="1810"/>
+            <point key="canvasLocation" x="2741" y="742"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="p5u-I4-juI">
@@ -476,6 +476,7 @@
                     <connections>
                         <segue destination="l1n-qT-waX" kind="relationship" relationship="viewControllers" id="njm-Bo-g2x"/>
                         <segue destination="wk3-ef-fhD" kind="relationship" relationship="viewControllers" id="T8G-kF-SIp"/>
+                        <segue destination="l9A-eA-GXI" kind="relationship" relationship="viewControllers" id="l6u-Tn-24c"/>
                         <segue destination="hHf-oy-UzO" kind="relationship" relationship="viewControllers" id="oWb-EV-Wwp"/>
                     </connections>
                 </tabBarController>
@@ -487,7 +488,7 @@
         <scene sceneID="wXd-2d-GUb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l1n-qT-waX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="SYf-eG-SEH"/>
+                    <tabBarItem key="tabBarItem" title="" image="search_icon.png" selectedImage="search_selected.png" id="SYf-eG-SEH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKP-ce-hcp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -510,7 +511,7 @@
             <objects>
                 <tableViewController id="IcS-WI-vVI" customClass="SchoolsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="A3G-rs-GBu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -609,6 +610,7 @@
         <image name="school_avatar_home.png" width="151" height="151"/>
         <image name="school_avatar_list.png" width="124" height="124"/>
         <image name="search_icon.png" width="42" height="22"/>
+        <image name="search_selected.png" width="19" height="19"/>
         <image name="selected_bttn.png" width="578" height="104"/>
         <image name="signup_bttn.png" width="578" height="104"/>
         <image name="signup_bttn_selected.png" width="578" height="104"/>
