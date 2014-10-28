@@ -79,7 +79,7 @@
     if(follows.count == 0){
         NSLog(@"0000000");
         //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
-        self.emptyLabel.text = @"Sorry, you are not scouting any colleges at the moment.";
+        self.emptyLabel.text = @"You are not scouting any colleges at the moment.";
         self.emptyLabel.layer.opacity = 1.0;
 
     }else{
