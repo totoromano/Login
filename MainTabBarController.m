@@ -53,8 +53,8 @@
                          forState:UIControlStateSelected];
     
     //tab3
-    selectedImage = [UIImage imageNamed:@"info_selected.png"];
-    unselectedImage = [UIImage imageNamed:@"info_icon.png"];
+    selectedImage = [UIImage imageNamed:@"about_icon_selected.png"];
+    unselectedImage = [UIImage imageNamed:@"about_icon.png"];
     UITabBarItem *item3 = [self.tabBar.items objectAtIndex:1];
     [item3 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item3 initWithTitle:@"Title 3" image:unselectedImage selectedImage:selectedImage];
