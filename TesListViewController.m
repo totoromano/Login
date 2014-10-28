@@ -58,7 +58,7 @@
     
     
     if(self.searchBox.text.length > 0 ){
-        NSLog(@"Count: %d ",filteredSchools.count);
+       // NSLog(@"Count: %d ",filteredSchools.count);
         if([follows containsObject:[filteredSchools objectAtIndex:indexPath.row][@"Name"]]){
             //cell.name.textColor = [UIColor redColor];
             cell.tag = 1;
@@ -87,6 +87,8 @@
         
         cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
     }
+    
+    
     cell.followButton.tag = indexPath.row;
     
     
@@ -129,7 +131,7 @@
    
     follows = [PFUser currentUser][@"follows"];
     filteredSchools = [schools filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"Name contains[c] %@", self.searchBox.text]];
-     NSLog(@"Changing and %d",filteredSchools.count);
+     //NSLog(@"Changing and %d",filteredSchools.count);
     [self.tableView reloadData];
     
     
