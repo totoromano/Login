@@ -21,12 +21,9 @@
 @implementation TesListViewController
 
 -(void)viewWillAppear:(BOOL)animated{
-    follows = [PFUser currentUser][@"follows"];
-    PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
-    [querySchools orderByAscending:@"Name"];
-    schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
+   
     self.noResults.layer.opacity = 0.0;
-    
+    follows = [PFUser currentUser][@"follows"];
 }
 
 - (void)viewDidLoad {
@@ -44,6 +41,11 @@
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
     [self.view addGestureRecognizer:tap];
+    
+    
+    PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
+    [querySchools orderByAscending:@"Name"];
+    schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
 }
 -(void)tapRecog{
     [self.searchBox resignFirstResponder];
