@@ -28,11 +28,11 @@
     
     NSString *tabbarItemTitle = self.tabBarItem.title;
     NSLog(@"viewDidAppear with %s and %s", [tabbarItemTitle UTF8String], [[self.tabBarItem description]UTF8String]);
-    UIImage *selectedImage = [UIImage imageNamed:@"search_selected.png"];
+    UIImage *selectedImage = [UIImage imageNamed:@"search_icon.png"];
     UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = self.tabBarItem;
     // [item1 initWithTitle:@"Search" image:unselectedImage selectedImage:selectedImage];
-    [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
+    //[item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 setTitle:@"Search"];
     
     [item1 setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }

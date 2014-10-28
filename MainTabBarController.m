@@ -33,8 +33,8 @@
 
 -(void)setupItems{
     //tab1
-    UIImage *selectedImage = [UIImage imageNamed:@"search_icon_selected.svg"];
-    UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.svg"];
+    UIImage *selectedImage = [UIImage imageNamed:@"search_icon_selected.png"];
+    UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 initWithTitle:@"Title 1" image:unselectedImage selectedImage:selectedImage];
