@@ -21,7 +21,7 @@
     // Add view to super view temporarily
     [sourceViewController.view.superview insertSubview:destinationViewController.view atIndex:0];
     
-    [UIView animateWithDuration:1.5
+    [UIView animateWithDuration:0.28
                           delay:0.0
                         options:UIViewAnimationOptionTransitionCrossDissolve
                      animations:^{
