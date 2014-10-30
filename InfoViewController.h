@@ -10,5 +10,6 @@
 
 @interface InfoViewController : UIViewController
 - (IBAction)logout:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *textLabel;
 
 @end

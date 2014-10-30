@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "CustomSegue.h"
 #import <Parse/Parse.h>
 
 @interface HomeViewController ()
@@ -33,6 +34,15 @@
 
 #pragma mark - Navigation
 
+- (IBAction)unwindToRed:(UIStoryboardSegue *)unwindSegue{
+}
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
+    // Instantiate a new CustomUnwindSegue
+    CustomSegue *segue = [[CustomSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
+    // Set the target point for the animation to the center of the button in this VC
+    return segue;
+}
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].

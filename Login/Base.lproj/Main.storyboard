@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -51,11 +51,11 @@
                                 <state key="selected" backgroundImage="x_pressed.png"/>
                                 <state key="highlighted" backgroundImage="x_pressed.png"/>
                                 <connections>
-                                    <action selector="goBack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YOU-aD-Qva"/>
+                                    <segue destination="5Ah-ZX-bir" kind="unwind" unwindAction="unwindToRed:" id="kvK-Rt-Yqq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="78.999999364813078" y="275" width="160" height="27"/>
+                                <rect key="frame" x="78.999998226122528" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,10 +79,10 @@
                         <outlet property="logInButton" destination="TdI-ys-mVN" id="CCc-iX-FDW"/>
                         <outlet property="passwordField" destination="CZB-Hu-6jb" id="7jt-cd-BvM"/>
                         <outlet property="usernameField" destination="LdA-4A-hmg" id="s2r-Hd-AFM"/>
-                        <segue destination="Cad-R1-WQ7" kind="modal" identifier="logInBack" modalTransitionStyle="crossDissolve" animates="NO" id="1mE-m0-7fU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <exit id="5Ah-ZX-bir" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2629" y="-1115"/>
         </scene>
@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="124.00000183605569" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999522227252" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -185,7 +185,7 @@
                                 <state key="selected" backgroundImage="x_pressed.png"/>
                                 <state key="highlighted" backgroundImage="x_pressed.png"/>
                                 <connections>
-                                    <action selector="goBack:" destination="lla-Pe-7ML" eventType="touchUpInside" id="5gV-w8-6cr"/>
+                                    <segue destination="RZN-YD-2Ni" kind="unwind" unwindAction="unwindToRed:" id="QSj-BQ-nFw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v2y-0H-9HV">
@@ -214,10 +214,10 @@
                         <outlet property="errorMessage" destination="NNB-Mi-zQO" id="Ued-zS-BNF"/>
                         <outlet property="passwordField" destination="HVI-HU-qFb" id="Gmh-UD-lqj"/>
                         <outlet property="usernameField" destination="ou2-aq-WMK" id="syZ-4k-P1Q"/>
-                        <segue destination="Cad-R1-WQ7" kind="custom" identifier="signUpBack" id="d6W-ul-SjT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kht-tz-9Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RZN-YD-2Ni" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1797" y="-1107"/>
         </scene>
@@ -356,6 +356,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="mZD-YQ-nvQ"/>
+                    <connections>
+                        <outlet property="textLabel" destination="n3d-yp-DBd" id="WBf-95-I5c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNW-c2-8Q4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -624,6 +627,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="vzF-Ph-PVC"/>
+        <segue reference="TxF-Yd-OkZ"/>
     </inferredMetricsTieBreakers>
 </document>

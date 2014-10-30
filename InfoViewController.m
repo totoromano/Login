@@ -15,9 +15,18 @@
 
 @implementation InfoViewController
 
+-(void)viewDidAppear
+:(BOOL)animated{
+    NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
+    self.textLabel.text = (NSString *)[[PFUser currentUser] username] ;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   // NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
+    //self.textLabel.text = [[[PFUser currentUser] username] UTF8String] ;
 }
 
 - (void)didReceiveMemoryWarning {

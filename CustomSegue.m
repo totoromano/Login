@@ -14,7 +14,28 @@
 - (void)perform
 {
     NSLog(@"Custom Segue Fired");
-    UIViewController *src = (UIViewController *) self.sourceViewController;
+    
+    UIViewController *sourceViewController = self.sourceViewController;
+    UIViewController *destinationViewController = self.destinationViewController;
+    
+    // Add view to super view temporarily
+    [sourceViewController.view.superview insertSubview:destinationViewController.view atIndex:0];
+    
+    [UIView animateWithDuration:1.5
+                          delay:0.0
+                        options:UIViewAnimationOptionTransitionCrossDissolve
+                     animations:^{
+                         [sourceViewController.view.layer setOpacity:0.01];
+
+                     }
+                     completion:^(BOOL finished){
+                         [destinationViewController.view removeFromSuperview]; // remove from temp super view
+                         [sourceViewController dismissViewControllerAnimated:NO completion:NULL]; // dismiss VC
+                     }];
+    
+    
+    
+   /* UIViewController *src = (UIViewController *) self.sourceViewController;
     UIViewController *dst = (UIViewController *) self.destinationViewController;
         [UIView transitionFromView:src.view
                         toView:dst.view
