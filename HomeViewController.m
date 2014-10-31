@@ -18,8 +18,9 @@
 -(void)viewWillAppear:(BOOL)animated{
     if([PFUser currentUser]){
         [self dismissViewControllerAnimated:NO completion:nil];
+        NSLog(@"Dismissing to %s",[[[self.view superview]  description]UTF8String]);
     }
-    NSLog(@"%s",[[[[UIApplication sharedApplication]windows] description]UTF8String]);
+    //NSLog(@"%s",[[[[UIApplication sharedApplication]windows] description]UTF8String]);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

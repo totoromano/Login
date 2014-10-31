@@ -7,6 +7,10 @@
 //
 
 #import "MainTabBarController.h"
+#import "UserDetailsViewController.h"
+#import "TesListViewController.h"
+#import "InfoViewController.h"
+#import <Parse/Parse.h>
 
 @interface MainTabBarController ()
 
@@ -15,9 +19,23 @@
 @implementation MainTabBarController
 -(void)viewDidAppear:(BOOL)animated{
     [self setupItems];
+    if(![PFUser currentUser]){
+        NSLog(@"Main Tab Bar Controller Working ");
+        [self performSegueWithIdentifier:@"TestRequest" sender:self];
+    }
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"MAin tab COntroller VIewWillAppear with VCS: %s", [[self.viewControllers description]UTF8String]);
+    //UserDetailsViewController * userDetVc = [self.viewControllers objectAtIndex:1];
+   // [userDetVc.schoolsCollection reloadData];
+    
+    InfoViewController *infoVC = [self.viewControllers objectAtIndex:2];
+    [infoVC setup];
+    
+    TesListViewController *tlVC = [self.viewControllers objectAtIndex:0];
+    [tlVC.tableView reloadData];
     
     [self setupItems];
 }

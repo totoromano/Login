@@ -23,11 +23,11 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     if(![PFUser currentUser]){
-        [self performSegueWithIdentifier:@"requestLogin" sender:self];
+        //[self performSegueWithIdentifier:@"requestLogin" sender:self];
     }
-    
+   /*
     NSString *tabbarItemTitle = self.tabBarItem.title;
-    NSLog(@"viewDidAppear with %s and %s", [tabbarItemTitle UTF8String], [[self.tabBarItem description]UTF8String]);
+   // NSLog(@"viewDidAppear with %s and %s", [tabbarItemTitle UTF8String], [[self.tabBarItem description]UTF8String]);
     UIImage *selectedImage = [UIImage imageNamed:@"search_icon.png"];
     UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
     UITabBarItem *item1 = self.tabBarItem;
@@ -39,17 +39,18 @@
                          forState:UIControlStateSelected];
     
     self.tabBarItem = item1;
+    */
 }
 -(void)viewWillDisappear:(BOOL)animated{
     //self.title = @"";
     //[super viewWillDisappear:NO];
    // self.tabBarController.tabBar
-    NSLog(@"viewWillDisappear");
+   // NSLog(@"viewWillDisappear");
         [self.schoolsCollection reloadData];
  
 }
 -(void)viewWillAppear:(BOOL)animated{
-   NSLog(@"viewWillAppear");
+  // NSLog(@"viewWillAppear");
     
     if(![PFUser currentUser]){
         [self performSegueWithIdentifier:@"requestLogin" sender:self];
@@ -87,7 +88,7 @@
                                                                     [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
     
     if(follows.count == 0){
-        NSLog(@"0000000");
+      //  NSLog(@"0000000");
         //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
         self.emptyLabel.text = @"You are not scouting any colleges at the moment.";
         self.emptyLabel.layer.opacity = 1.0;
@@ -99,7 +100,7 @@
 }
 
 - (void)viewDidLoad {
-    NSLog(@"viewDidLoad");
+   // NSLog(@"viewDidLoad");
     [super viewDidLoad];
     //NSLog(@"The current user is: %s\n", [[[PFUser currentUser]description]UTF8String]);
     // Do any additional setup after loading the view.
