@@ -45,12 +45,20 @@
     //[super viewWillDisappear:NO];
    // self.tabBarController.tabBar
     NSLog(@"viewWillDisappear");
+        [self.schoolsCollection reloadData];
  
 }
 -(void)viewWillAppear:(BOOL)animated{
    NSLog(@"viewWillAppear");
+    
+    if(![PFUser currentUser]){
+        [self performSegueWithIdentifier:@"requestLogin" sender:self];
+    }
+    
     self.title = @"Home";
     self.tabBarItem.title = @"Search";
+    
+    
     
     
        [self.tabBarItem setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor redColor] }
@@ -65,13 +73,15 @@
 //    self.idLabel.text = [[PFUser currentUser] objectId];
     
     follows = [PFUser currentUser][@"follows"];
+    [self.schoolsCollection reloadData];
+
     NSString *content = @"";
     
     for(int i =0; i < follows.count; i ++){
         content = [content stringByAppendingString:[NSString stringWithFormat:@"%@ \n",[follows objectAtIndex:i] ]];
     }
 //    self.followsLabel.text = content;
-    [self.schoolsCollection reloadData];
+
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                                     [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
