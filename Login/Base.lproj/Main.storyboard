@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="78.999998226122528" y="275" width="160" height="27"/>
+                                <rect key="frame" x="79" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +99,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999522227252" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999801276" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -477,9 +477,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tabBar>
                     <connections>
+                        <segue destination="hHf-oy-UzO" kind="relationship" relationship="viewControllers" id="oWb-EV-Wwp"/>
                         <segue destination="l1n-qT-waX" kind="relationship" relationship="viewControllers" id="njm-Bo-g2x"/>
                         <segue destination="wk3-ef-fhD" kind="relationship" relationship="viewControllers" id="T8G-kF-SIp"/>
-                        <segue destination="hHf-oy-UzO" kind="relationship" relationship="viewControllers" id="oWb-EV-Wwp"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-PY-cnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
