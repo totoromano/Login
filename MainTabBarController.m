@@ -37,6 +37,8 @@
     TesListViewController *tlVC = [self.viewControllers objectAtIndex:0];
     [tlVC.tableView reloadData];
     
+    [self setSelectedIndex:1];
+    
     [self setupItems];
 }
 
