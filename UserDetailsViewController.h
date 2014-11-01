@@ -19,4 +19,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *emptyLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *schoolsCollection;
 - (IBAction)logOut:(id)sender;
+-(void)setUpAndReloadData;
 @end

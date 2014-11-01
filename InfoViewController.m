@@ -16,15 +16,15 @@
 @implementation InfoViewController
 
 -(void)viewDidAppear:(BOOL)animated{
-    NSLog(@"ViewDidAppear");
+   // NSLog(@"ViewDidAppear");
         
 }
 -(void)viewDidDisappear:(BOOL)animated{
-    NSLog(@"viewDidDisappear");
+   // NSLog(@"viewDidDisappear");
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-     NSLog(@"viewWillAppear");
+    // NSLog(@"viewWillAppear");
 }
 
 -(void) setup{
@@ -32,12 +32,12 @@
 }
 
 - (void)viewDidLoad {
-    NSLog(@"viewDidLoad");
+    //NSLog(@"viewDidLoad");
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    // NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
     //self.textLabel.text = [[[PFUser currentUser] username] UTF8String] ;
-    NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
+   // NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
     [self setup];
 }
 
@@ -57,7 +57,7 @@
 */
 
 -(UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier{
-    NSLog(@"Over HEre");
+   // NSLog(@"Over HEre");
     
     UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
     // Set the target point for the animation to the center of the button in this VC

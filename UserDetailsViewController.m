@@ -72,9 +72,9 @@
 //    self.usernameLabel.text = [[PFUser currentUser] objectForKey:@"username"];
 //    self.emailLabel.text = [[PFUser currentUser]objectForKey:@"ethmail"];
 //    self.idLabel.text = [[PFUser currentUser] objectId];
-    
-    follows = [PFUser currentUser][@"follows"];
-    [self.schoolsCollection reloadData];
+    [self setUpAndReloadData];
+//    follows = [PFUser currentUser][@"follows"];
+//    [self.schoolsCollection reloadData];
 
     NSString *content = @"";
     
@@ -87,15 +87,15 @@
     self.navigationController.navigationBar.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
                                                                     [UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"Helvetica" size:18],NSFontAttributeName,nil];
     
-    if(follows.count == 0){
-      //  NSLog(@"0000000");
-        //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
-        self.emptyLabel.text = @"You are not scouting any colleges at the moment.";
-        self.emptyLabel.layer.opacity = 1.0;
-
-    }else{
-        self.emptyLabel.layer.opacity = 0;
-    }
+//    if(follows.count == 0){
+//      //  NSLog(@"0000000");
+//        //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
+//        self.emptyLabel.text = @"You are not scouting any colleges at the moment.";
+//        self.emptyLabel.layer.opacity = 1.0;
+//
+//    }else{
+//        self.emptyLabel.layer.opacity = 0;
+//    }
 
 }
 
@@ -127,6 +127,10 @@
         SchoolCollectionViewCell *senderCell = (SchoolCollectionViewCell *)sender;
         PushedViewController *pvc = [segue destinationViewController];
         pvc.container = @[ senderCell.schoolTitle.text];
+        
+        
+        NSDictionary *dimensions = @{@"school": senderCell.schoolTitle.text};
+        [PFAnalytics trackEvent:@"School Selected" dimensions:dimensions];
     
     }
 }
@@ -144,6 +148,21 @@
 /*
     Collection View Methods
 */
+-(void)setUpAndReloadData{
+    follows = [PFUser currentUser][@"follows"];
+    if(follows.count == 0){
+        //  NSLog(@"0000000");
+        //UILabel *emptyLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, 30, 50, 50)];
+        self.emptyLabel.text = @"You are not scouting any colleges at the moment.";
+        self.emptyLabel.layer.opacity = 1.0;
+        
+    }else{
+        self.emptyLabel.layer.opacity = 0;
+    }
+    
+    
+    [self.schoolsCollection reloadData];
+}
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     return follows.count;

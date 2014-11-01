@@ -20,16 +20,22 @@
 -(void)viewDidAppear:(BOOL)animated{
     [self setupItems];
     if(![PFUser currentUser]){
-       // NSLog(@"Main Tab Bar Controller Working ");
+      //  NSLog(@"Main Tab Bar Controller Working ");
         [self performSegueWithIdentifier:@"TestRequest" sender:self];
     }
 
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    NSLog(@"MAin tab COntroller VIewWillAppear with VCS: %s", [[self.viewControllers description]UTF8String]);
+   // NSLog(@"MAin tab COntroller VIewWillAppear with VCS: %s", [[self.viewControllers description]UTF8String]);
     //UserDetailsViewController * userDetVc = [self.viewControllers objectAtIndex:1];
    // [userDetVc.schoolsCollection reloadData];
+    
+    UINavigationController *navContr = [self.viewControllers objectAtIndex:1];
+    //NSLog(@"UINAVCONTR: %s",[[[[navContr viewControllers]objectAtIndex:0] description]UTF8String]);
+    
+    UserDetailsViewController *userDet = [[navContr viewControllers] objectAtIndex:0];
+   [userDet setUpAndReloadData];
     
     InfoViewController *infoVC = [self.viewControllers objectAtIndex:2];
     [infoVC setup];
