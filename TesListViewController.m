@@ -24,6 +24,22 @@
    
     self.noResults.layer.opacity = 0.0;
     follows = [PFUser currentUser][@"follows"];
+    
+    [self setup];
+   
+}
+
+-(void)setup{
+    PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
+    [querySchools whereKey:@"Available" equalTo:[NSNumber numberWithBool:YES]];
+    [querySchools orderByAscending:@"Name"];
+    schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
+    
+//    for(int i =0; i < schools.count; i++){
+//        
+//        NSLog(@"School: %s",[[schools objectAtIndex:i][@"Name"] UTF8String]);
+//    }
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
@@ -42,10 +58,7 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapRecog)];
     [self.view addGestureRecognizer:tap];
     
-    
-    PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
-    [querySchools orderByAscending:@"Name"];
-    schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];
+
 }
 -(void)tapRecog{
     [self.searchBox resignFirstResponder];

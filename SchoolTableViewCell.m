@@ -34,9 +34,9 @@
         [self.followButton setTitle:@"Scouting" forState:UIControlStateNormal];
         [self.followButton setBackgroundImage:[UIImage imageNamed:@"following_bttn.png"] forState:UIControlStateNormal];
         
-        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-        [currentInstallation addUniqueObject:self.name.text forKey:@"channels"];
-        [currentInstallation saveInBackground];
+//        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//        [currentInstallation addUniqueObject:self.name.text forKey:@"channels"];
+//        [currentInstallation saveInBackground];
         
         [[PFUser currentUser]addUniqueObject:self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
@@ -57,10 +57,10 @@
         [self.followButton setTitle:@"Prospect" forState:UIControlStateNormal];
         [self.followButton setBackgroundImage:[UIImage imageNamed:@"follow_bttn.png"] forState:UIControlStateNormal];
        
-        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-        [currentInstallation removeObject:self.name.text forKey:@"channels" ];
-        [currentInstallation saveInBackground];
-        
+//        PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//        [currentInstallation removeObject:self.name.text forKey:@"channels" ];
+//        [currentInstallation saveInBackground];
+//        
         [[PFUser currentUser] removeObject :self.name.text forKey:@"follows"];
         [[PFUser currentUser]save];
     }
