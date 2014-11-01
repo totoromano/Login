@@ -18,7 +18,7 @@
 -(void)viewDidAppear:(BOOL)animated{
    // NSLog(@"ViewDidAppear");
     self.AboutContainer.layer.cornerRadius = 6.0f;
-    self.view.backgroundColor = [UIColor colorWithRed:1/255 green:1/255 blue:1/255 alpha:1];
+    self.view.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95];
         
 }
 -(void)viewDidDisappear:(BOOL)animated{
