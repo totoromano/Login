@@ -20,7 +20,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [self setupItems];
     if(![PFUser currentUser]){
-        NSLog(@"Main Tab Bar Controller Working ");
+       // NSLog(@"Main Tab Bar Controller Working ");
         [self performSegueWithIdentifier:@"TestRequest" sender:self];
     }
 
