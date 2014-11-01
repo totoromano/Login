@@ -17,6 +17,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
    // NSLog(@"ViewDidAppear");
+    self.AboutContainer.layer.cornerRadius = 6.0f;
         
 }
 -(void)viewDidDisappear:(BOOL)animated{

@@ -11,6 +11,7 @@
 @interface InfoViewController : UIViewController
 - (IBAction)logout:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
+@property (strong, nonatomic) IBOutlet UIView *AboutContainer;
 
 
 -(void)setup;
