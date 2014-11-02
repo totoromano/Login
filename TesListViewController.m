@@ -30,7 +30,7 @@
 }
 
 -(void)setup{
-    PFQuery *querySchools =  [PFQuery queryWithClassName:@"Schools"];
+    PFQuery *querySchools =  [PFQuery queryWithClassName:@"SchoolsNames"];
     [querySchools whereKey:@"Available" equalTo:[NSNumber numberWithBool:YES]];
     [querySchools orderByAscending:@"Name"];
     schools = [NSMutableArray arrayWithArray:[querySchools findObjects]];

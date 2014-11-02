@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PushedViewController : UIViewController
+@interface PushedViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
 @property NSArray *container;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)manualBack:(id)sender;
 
 @end

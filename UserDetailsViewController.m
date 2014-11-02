@@ -117,32 +117,6 @@
 }
 
 
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    if([[segue identifier]isEqualToString:@"schoolSelected"]){
-        SchoolCollectionViewCell *senderCell = (SchoolCollectionViewCell *)sender;
-        PushedViewController *pvc = [segue destinationViewController];
-        pvc.container = @[ senderCell.schoolTitle.text];
-        
-        
-        NSDictionary *dimensions = @{@"school": senderCell.schoolTitle.text};
-        [PFAnalytics trackEvent:@"School Selected" dimensions:dimensions];
-    
-    }
-}
-
-
-- (IBAction)logOut:(id)sender {
-    [PFUser logOut];
-    [self performSegueWithIdentifier:@"requestLogin" sender:self];
-    //[self.navigationController popToRootViewControllerAnimated:NO];
-    
-   // NSLog(@"%s\n",[[UIApplication description]UTF8String]);
-}
 
 
 /*
@@ -176,5 +150,40 @@
     return cell;
 
 }
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if([[segue identifier]isEqualToString:@"schoolSelected"]){
+        SchoolCollectionViewCell *senderCell = (SchoolCollectionViewCell *)sender;
+        PushedViewController *pvc = [segue destinationViewController];
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"Schools"];
+        [query whereKey:@"Name" equalTo:senderCell.schoolTitle.text];
+        PFObject *schoolInfo = [query getFirstObject];
+        
+        
+        pvc.container = @[ senderCell.schoolTitle.text,schoolInfo];
+        
+        
+        NSDictionary *dimensions = @{@"school": senderCell.schoolTitle.text};
+        [PFAnalytics trackEvent:@"School Selected" dimensions:dimensions];
+        
+    }
+}
+
+
+- (IBAction)logOut:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"requestLogin" sender:self];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
+    
+    // NSLog(@"%s\n",[[UIApplication description]UTF8String]);
+}
+
+
 
 @end
