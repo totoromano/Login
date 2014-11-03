@@ -13,4 +13,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UIButton *followButton;
 - (IBAction)follow:(UIButton *)sender;
+- (void) orientationChanged:(NSNotification *)note;
 @end

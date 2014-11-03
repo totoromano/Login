@@ -14,5 +14,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) IBOutlet UILabel *noResults;
 -(void)setup;
+-(void) orientationChanged:(NSNotification *)note;
+
 
 @end
