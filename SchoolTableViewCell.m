@@ -33,40 +33,13 @@
     switch(device.orientation)
     {
         case UIDeviceOrientationPortrait:
-            /* start special animation */
-            //self.tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"list_background.png"]];
-            //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"List_LandscapeBG.png"]];
-            // self.view.layer.contents = (id)[UIImage imageNamed:@"List_LandscapeBG.png"].CGImage;
-            //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"list_background.png"]];
-            //[self.MenWomenController setFrame:CGRectMake(-1, 63, self.view.layer.frame.size.width+3,self.MenWomenController.frame.size.height)];
-            // self.tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"list_background.png"]];
-            // [self.tableView setFrame:CGRectMake(0, (self.MenWomenController.frame.origin.y + self.MenWomenController.frame.size.height)-1,self.tableView.frame.size.width, self.tableView.frame.size.height) ];
-            //printf("-->+: %f \n",(self.MenWomenController.frame.origin.y + self.MenWomenController.frame.size.height));
             self.followButton.frame = CGRectMake(226, 26, 86, 30);
             self.name.frame = CGRectMake(77, 12, 129, 53);
-            
             break;
-            
         case UIDeviceOrientationLandscapeRight:
         case UIDeviceOrientationLandscapeLeft:
-            //printf("-->: %f \n",(self.MenWomenController.frame.origin.y + self.MenWomenController.frame.size.height));
-            
-            // self.tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@""]];
-            // printf("%d \n",self.MenWomenController.frame.origin.x);
-            
-            //  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"List_LandscapeBG.png"]];
-            //
-            // [self.MenWomenController setFrame:CGRectMake(-1, self.navigationController.navigationBar.frame.size.height + (self./MenWomenController.frame.size.height/2)-2, self.view.layer.frame.size.width+3 , self.MenWomenController.frame.size.height)];
-            //printf("-->: %f \n",(self.MenWomenController.frame.origin.y + self.MenWomenController.frame.size.height));
-            
-            //  [self.tableView setFrame:CGRectMake(0, (self.MenWomenController.frame.origin.y + self.MenWomenController.frame.size.height)-1,self.tableView.frame.size.width, self.tableView.frame.size.height) ];
-            
-            // self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"list_background.png"]];
-            //self.tableView.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"List_LandscapeBG.png"]];
-            
             self.followButton.frame = CGRectMake(400, 26, 86, 30);
             self.name.frame = CGRectMake(77, 12, 200, 53);
-            
             break;
         default:
             break;
