@@ -38,6 +38,12 @@
 		5961C3D91A0319850024E3FF /* about_icon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3D51A0319850024E3FF /* about_icon_selected@2x.png */; };
 		5961C3DA1A0319850024E3FF /* about_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3D61A0319850024E3FF /* about_icon.png */; };
 		5961C3DB1A0319850024E3FF /* about_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3D71A0319850024E3FF /* about_icon@2x.png */; };
+		5961C3DD1A099E170024E3FF /* avatar_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3DC1A099E170024E3FF /* avatar_frame.png */; };
+		5961C3DF1A099E200024E3FF /* avatar_frame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3DE1A099E200024E3FF /* avatar_frame@2x.png */; };
+		5961C3E21A09A10F0024E3FF /* racine_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3E01A09A10F0024E3FF /* racine_avatar.png */; };
+		5961C3E31A09A10F0024E3FF /* racine_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3E11A09A10F0024E3FF /* racine_avatar@2x.png */; };
+		5961C3EA1A09A2AE0024E3FF /* claudio_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3E81A09A2AE0024E3FF /* claudio_avatar.png */; };
+		5961C3EB1A09A2AE0024E3FF /* claudio_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5961C3E91A09A2AE0024E3FF /* claudio_avatar@2x.png */; };
 		5995AACB19FD663900C746F2 /* school_avatar_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACA19FD663900C746F2 /* school_avatar_home.png */; };
 		5995AACF19FD6BB400C746F2 /* school_avatar_list.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AACE19FD6BB400C746F2 /* school_avatar_list.png */; };
 		5995AAD119FD965800C746F2 /* school_avatar_home-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5995AAD019FD965800C746F2 /* school_avatar_home-2.png */; };
@@ -50,8 +56,6 @@
 		59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6219FC24E30077815B /* Signup_bg_v2.png */; };
 		59B23A6519FC255B0077815B /* Signup_bg_v3.png in Resources */ = {isa = PBXBuildFile; fileRef = 59B23A6419FC255B0077815B /* Signup_bg_v3.png */; };
 		59D5255319FB4ED50027C461 /* landing.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255219FB4ED50027C461 /* landing.png */; };
-		59D5255619FB4FC90027C461 /* Button_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255419FB4FC90027C461 /* Button_default.png */; };
-		59D5255719FB4FC90027C461 /* Button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D5255519FB4FC90027C461 /* Button_selected.png */; };
 		D72538F419FB4639007FDC8B /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D72538F319FB4638007FDC8B /* CustomSegue.m */; };
 		D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */ = {isa = PBXBuildFile; fileRef = D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */; };
 		D725390019FB5C37007FDC8B /* SchoolCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D72538FF19FB5C37007FDC8B /* SchoolCollectionViewCell.m */; };
@@ -131,6 +135,12 @@
 		5961C3D51A0319850024E3FF /* about_icon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_icon_selected@2x.png"; sourceTree = "<group>"; };
 		5961C3D61A0319850024E3FF /* about_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_icon.png; sourceTree = "<group>"; };
 		5961C3D71A0319850024E3FF /* about_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about_icon@2x.png"; sourceTree = "<group>"; };
+		5961C3DC1A099E170024E3FF /* avatar_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_frame.png; sourceTree = "<group>"; };
+		5961C3DE1A099E200024E3FF /* avatar_frame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar_frame@2x.png"; sourceTree = "<group>"; };
+		5961C3E01A09A10F0024E3FF /* racine_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = racine_avatar.png; sourceTree = "<group>"; };
+		5961C3E11A09A10F0024E3FF /* racine_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "racine_avatar@2x.png"; sourceTree = "<group>"; };
+		5961C3E81A09A2AE0024E3FF /* claudio_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = claudio_avatar.png; sourceTree = "<group>"; };
+		5961C3E91A09A2AE0024E3FF /* claudio_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "claudio_avatar@2x.png"; sourceTree = "<group>"; };
 		5995AACA19FD663900C746F2 /* school_avatar_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_avatar_home.png; sourceTree = "<group>"; };
 		5995AACE19FD6BB400C746F2 /* school_avatar_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = school_avatar_list.png; sourceTree = "<group>"; };
 		5995AAD019FD965800C746F2 /* school_avatar_home-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "school_avatar_home-2.png"; sourceTree = "<group>"; };
@@ -143,8 +153,6 @@
 		59B23A6219FC24E30077815B /* Signup_bg_v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v2.png; sourceTree = "<group>"; };
 		59B23A6419FC255B0077815B /* Signup_bg_v3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup_bg_v3.png; sourceTree = "<group>"; };
 		59D5255219FB4ED50027C461 /* landing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing.png; sourceTree = "<group>"; };
-		59D5255419FB4FC90027C461 /* Button_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_default.png; sourceTree = "<group>"; };
-		59D5255519FB4FC90027C461 /* Button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button_selected.png; sourceTree = "<group>"; };
 		D72538F219FB4638007FDC8B /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomSegue.h; path = ../CustomSegue.h; sourceTree = "<group>"; };
 		D72538F319FB4638007FDC8B /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomSegue.m; path = ../CustomSegue.m; sourceTree = "<group>"; };
 		D72538F519FB4A71007FDC8B /* landing_LandscapeBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing_LandscapeBG.png; sourceTree = "<group>"; };
@@ -233,12 +241,16 @@
 			isa = PBXGroup;
 			children = (
 				595AD1A619FB6B3D00005E3A /* back_arrow.png */,
+				5961C3DC1A099E170024E3FF /* avatar_frame.png */,
+				5961C3DE1A099E200024E3FF /* avatar_frame@2x.png */,
 				5961C3D41A0319850024E3FF /* about_icon_selected.png */,
 				5961C3D51A0319850024E3FF /* about_icon_selected@2x.png */,
+				5961C3E01A09A10F0024E3FF /* racine_avatar.png */,
+				5961C3E11A09A10F0024E3FF /* racine_avatar@2x.png */,
+				5961C3E81A09A2AE0024E3FF /* claudio_avatar.png */,
+				5961C3E91A09A2AE0024E3FF /* claudio_avatar@2x.png */,
 				5961C3D61A0319850024E3FF /* about_icon.png */,
 				5961C3D71A0319850024E3FF /* about_icon@2x.png */,
-				59D5255419FB4FC90027C461 /* Button_default.png */,
-				59D5255519FB4FC90027C461 /* Button_selected.png */,
 				D725391319FD9F00007FDC8B /* follow_bttn-1-1.png */,
 				5995AADE19FDA6A600C746F2 /* follow_bttn.png */,
 				D725391419FD9F00007FDC8B /* following_bttn-1.png */,
@@ -464,12 +476,10 @@
 				59B23A6519FC255B0077815B /* Signup_bg_v3.png in Resources */,
 				593117B219FF1B6E00DF69FC /* search_icon_selected-1.png in Resources */,
 				D7807C9519FB0F4E0082A3DE /* Main.storyboard in Resources */,
-				59D5255719FB4FC90027C461 /* Button_selected.png in Resources */,
 				5995AACB19FD663900C746F2 /* school_avatar_home.png in Resources */,
 				5961C3D91A0319850024E3FF /* about_icon_selected@2x.png in Resources */,
 				593117D01A002E6900DF69FC /* MagnifyingGlass_icon.png in Resources */,
 				595AD1A919FB6DAE00005E3A /* signup_bttn_selected.png in Resources */,
-				59D5255619FB4FC90027C461 /* Button_default.png in Resources */,
 				59B23A6319FC24E30077815B /* Signup_bg_v2.png in Resources */,
 				595AD1A119FB67FB00005E3A /* Signup_placeholder.png in Resources */,
 				5961C3D81A0319850024E3FF /* about_icon_selected.png in Resources */,
@@ -480,13 +490,16 @@
 				5961C3DA1A0319850024E3FF /* about_icon.png in Resources */,
 				594F95B019FC529500E11A3B /* search_selected.png in Resources */,
 				D725390D19FD4EC5007FDC8B /* logo-border.png in Resources */,
+				5961C3E21A09A10F0024E3FF /* racine_avatar.png in Resources */,
 				593117B819FF254500DF69FC /* search_icon_selected.png in Resources */,
 				D7807C4419F1F8CD0082A3DE /* LaunchScreen.xib in Resources */,
+				5961C3DD1A099E170024E3FF /* avatar_frame.png in Resources */,
 				D725390F19FD501F007FDC8B /* lipscomb-logo-1.png in Resources */,
 				5995AAD119FD965800C746F2 /* school_avatar_home-2.png in Resources */,
 				595AD1A719FB6B3D00005E3A /* back_arrow.png in Resources */,
 				5995AAD719FD982900C746F2 /* lipscomb-logo.png in Resources */,
 				595AD1A319FB697B00005E3A /* Signup_bg.png in Resources */,
+				5961C3DF1A099E200024E3FF /* avatar_frame@2x.png in Resources */,
 				593117A819FEFABF00DF69FC /* search_icon-5.png in Resources */,
 				D725391619FD9F00007FDC8B /* following_bttn-1.png in Resources */,
 				592ABAAD19FBEFB000761D0F /* x_close.png in Resources */,
@@ -504,10 +517,13 @@
 				593117A619FEF6AD00DF69FC /* search_icon-4.png in Resources */,
 				5995AAD519FD96FE00C746F2 /* school_avatar_home-4.png in Resources */,
 				5995AAD319FD96A200C746F2 /* school_avatar_home-3.png in Resources */,
+				5961C3EB1A09A2AE0024E3FF /* claudio_avatar@2x.png in Resources */,
 				5995AACF19FD6BB400C746F2 /* school_avatar_list.png in Resources */,
+				5961C3EA1A09A2AE0024E3FF /* claudio_avatar.png in Resources */,
 				594F95AF19FC529500E11A3B /* search_icon-1.png in Resources */,
 				5961C3CB1A030D5F0024E3FF /* home_icon@2x.png in Resources */,
 				D72538F619FB4A72007FDC8B /* landing_LandscapeBG.png in Resources */,
+				5961C3E31A09A10F0024E3FF /* racine_avatar@2x.png in Resources */,
 				D7807C4119F1F8CD0082A3DE /* Images.xcassets in Resources */,
 				59D5255319FB4ED50027C461 /* landing.png in Resources */,
 				595AD19F19FB62F200005E3A /* login_bg.png in Resources */,
