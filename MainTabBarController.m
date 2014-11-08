@@ -60,12 +60,12 @@
 
 -(void)setupItems{
     //tab1
-    UIImage *selectedImage = [UIImage imageNamed:@"search_icon_selected.png"];
-    UIImage *unselectedImage = [UIImage imageNamed:@"search_icon.png"];
+    UIImage *selectedImage = [UIImage imageNamed:@"discover_icon_selected.png"];
+    UIImage *unselectedImage = [UIImage imageNamed:@"discover_icon.png"];
     UITabBarItem *item1 = [self.tabBar.items objectAtIndex:0];
     [item1 setFinishedSelectedImage:selectedImage withFinishedUnselectedImage:unselectedImage];
     //[item1 initWithTitle:@"Title 1" image:unselectedImage selectedImage:selectedImage];
-    [item1 setTitle:@"Search"];
+    [item1 setTitle:@"Discover"];
     [item1 setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor redColor] }
                          forState:UIControlStateSelected];
     
