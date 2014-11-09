@@ -77,7 +77,7 @@
                 
                 self.crSocial.frame = CGRectMake(self.crSocial.frame.origin.x-15, self.crSocial.frame.origin.y, self.crSocial.frame.size.width, self.crSocial.frame.size.height);
                 self.rdSocial.frame = CGRectMake(self.rdSocial.frame.origin.x+15, self.rdSocial.frame.origin.y, self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
-                
+                //needsResetFrame = NO;
             }
             break;
             
