@@ -30,7 +30,7 @@
 }
 
 -(void) setup{
-    self.textLabel.text = (NSString *)[[PFUser currentUser] username] ;
+    self.textLabel.text = [@"Hello, " stringByAppendingString:(NSString *)[[PFUser currentUser] username] ];
 }
 
 - (void)viewDidLoad {
