@@ -17,6 +17,13 @@
      addObserver:self selector:@selector(orientationChanged:)
      name:UIDeviceOrientationDidChangeNotification
      object:[UIDevice currentDevice]];
+    
+    UIDevice * device = [UIDevice currentDevice];
+    if(device.orientation == UIDeviceOrientationLandscapeRight || device.orientation == UIDeviceOrientationLandscapeLeft ){
+        
+        [self orientationChanged:[NSNotification notificationWithName:@"-" object:device]];
+        
+    }
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
