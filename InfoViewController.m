@@ -60,11 +60,35 @@
     {
         case UIDeviceOrientationPortrait:
             self.ScrollContainer.contentSize = CGSizeMake(0,0);
+            /*
+            self.crAvatar.frame = CGRectMake(self.crAvatar.frame.origin.x-15, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+            self.crAvatarFrame.frame = CGRectMake(self.crAvatarFrame.frame.origin.x-15, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
+            
+            
+            self.rdAvatar.frame = CGRectMake(self.rdAvatar.frame.origin.x+15, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+            self.rdAvatarFrame.frame = CGRectMake(self.rdAvatarFrame.frame.origin.x+15, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+            */
             break;
             
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:
             self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 100);
+            
+            self.crAvatar.frame = CGRectMake(self.crAvatar.frame.origin.x+15, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+            self.crAvatarFrame.frame = CGRectMake(self.crAvatarFrame.frame.origin.x+15, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
+            
+            
+            self.rdAvatar.frame = CGRectMake(self.rdAvatar.frame.origin.x-15, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+            self.rdAvatarFrame.frame = CGRectMake(self.rdAvatarFrame.frame.origin.x-15, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+            
+            
+            self.crTitle.frame = CGRectMake(self.crTitle.frame.origin.x+15, self.crTitle.frame.origin.y, self.crTitle.frame.size.width, self.crTitle.frame.size.height);
+            self.rdTitle.frame = CGRectMake(self.rdTitle.frame.origin.x-15, self.rdTitle.frame.origin.y, self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
+            
+            self.crSocial.frame = CGRectMake(self.crSocial.frame.origin.x+15, self.crSocial.frame.origin.y, self.crSocial.frame.size.width, self.crSocial.frame.size.height);
+            self.rdSocial.frame = CGRectMake(self.rdSocial.frame.origin.x-15, self.rdSocial.frame.origin.y, self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
+            
+            
             break;
             
         default:

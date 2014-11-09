@@ -411,6 +411,9 @@
                                                 <rect key="frame" x="159" y="133" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_frame.png" id="e2i-xZ-IJ4">
+                                                <rect key="frame" x="22" y="133" width="100" height="100"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racine Davis Designer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fMm-eL-RRO">
                                                 <rect key="frame" x="163" y="241" width="92" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -431,9 +434,6 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_frame.png" id="e2i-xZ-IJ4">
-                                                <rect key="frame" x="22" y="133" width="100" height="100"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claudio Romano iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o67-Wd-PIJ">
                                                 <rect key="frame" x="15" y="241" width="126" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -460,7 +460,15 @@
                     <connections>
                         <outlet property="AboutContainer" destination="Mwt-h0-DAM" id="Byd-aI-Iby"/>
                         <outlet property="ScrollContainer" destination="Abh-GP-0vP" id="wUD-VE-8GL"/>
+                        <outlet property="crAvatar" destination="Pkt-Aq-rZ4" id="lMO-ID-VKm"/>
+                        <outlet property="crAvatarFrame" destination="e2i-xZ-IJ4" id="Gc8-wp-S85"/>
+                        <outlet property="crSocial" destination="Tjq-8Q-3Ie" id="NrV-ZB-Ka5"/>
+                        <outlet property="crTitle" destination="o67-Wd-PIJ" id="voQ-Gt-NeH"/>
                         <outlet property="logOutButton" destination="NcI-xG-TUC" id="dot-Qn-mnf"/>
+                        <outlet property="rdAvatar" destination="SXS-HV-GDv" id="WEz-Lt-trp"/>
+                        <outlet property="rdAvatarFrame" destination="z0p-gs-3pl" id="yH9-TE-2bA"/>
+                        <outlet property="rdSocial" destination="Iid-rM-kgV" id="TFt-yR-zkb"/>
+                        <outlet property="rdTitle" destination="fMm-eL-RRO" id="m37-1c-nrh"/>
                         <outlet property="textLabel" destination="n3d-yp-DBd" id="WBf-95-I5c"/>
                     </connections>
                 </viewController>
