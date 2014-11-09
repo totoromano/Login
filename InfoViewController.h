@@ -12,6 +12,7 @@
 - (IBAction)logout:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
 @property (strong, nonatomic) IBOutlet UIView *AboutContainer;
+@property (strong, nonatomic) IBOutlet UIScrollView *ScrollContainer;
 
 
 -(void)setup;

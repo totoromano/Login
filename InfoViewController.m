@@ -29,10 +29,6 @@
     // NSLog(@"viewWillAppear");
 }
 
--(void) setup{
-    self.textLabel.text = [@"Hello, " stringByAppendingString:(NSString *)[[PFUser currentUser] username] ];
-}
-
 - (void)viewDidLoad {
     //NSLog(@"viewDidLoad");
     [super viewDidLoad];
@@ -43,9 +39,35 @@
     [self setup];
 }
 
+-(void) setup{
+    if([PFUser currentUser])
+    self.textLabel.text = [@"Hello, " stringByAppendingString:(NSString *)[[PFUser currentUser] username] ];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewDidLayoutSubviews{
+    
+//    UIDevice *device = [UIDevice currentDevice];
+//    
+//    switch( device.orientation)
+//    {
+//        case UIDeviceOrientationPortrait:
+//            
+//            break;
+//            
+//        case UIDeviceOrientationLandscapeLeft:
+//        case UIDeviceOrientationLandscapeRight:
+//            
+//            break;
+//            
+//        default:
+//            break;
+//    }
+   // self.ScrollContainer.contentSize = CGSizeMake(320,500 );
 }
 
 /*
