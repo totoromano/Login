@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2lf-ti-o6O">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVf-u9-Lxv">
-                                <rect key="frame" x="79" y="275" width="160" height="27"/>
+                                <rect key="frame" x="78.999999502297285" y="275" width="160" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Forgot Password?">
@@ -101,7 +101,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Hv-sL-YE3">
-                                <rect key="frame" x="123.99999734314336" y="490" width="77" height="39"/>
+                                <rect key="frame" x="123.99999857318176" y="490" width="77" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Login">
@@ -158,7 +158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Signup_bg_v3.png" id="b33-ZI-cjj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Signup_bg.png" id="b33-ZI-cjj">
                                 <rect key="frame" x="-3" y="-1" width="326" height="576"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -411,9 +411,6 @@
                                                 <rect key="frame" x="159" y="133" width="100" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_frame.png" id="e2i-xZ-IJ4">
-                                                <rect key="frame" x="22" y="133" width="100" height="100"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racine Davis Designer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fMm-eL-RRO">
                                                 <rect key="frame" x="163" y="241" width="92" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -434,6 +431,9 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_frame.png" id="e2i-xZ-IJ4">
+                                                <rect key="frame" x="22" y="133" width="100" height="100"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Claudio Romano iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o67-Wd-PIJ">
                                                 <rect key="frame" x="15" y="241" width="126" height="38"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -460,15 +460,7 @@
                     <connections>
                         <outlet property="AboutContainer" destination="Mwt-h0-DAM" id="Byd-aI-Iby"/>
                         <outlet property="ScrollContainer" destination="Abh-GP-0vP" id="wUD-VE-8GL"/>
-                        <outlet property="crAvatar" destination="Pkt-Aq-rZ4" id="lMO-ID-VKm"/>
-                        <outlet property="crAvatarFrame" destination="e2i-xZ-IJ4" id="Gc8-wp-S85"/>
-                        <outlet property="crSocial" destination="Tjq-8Q-3Ie" id="NrV-ZB-Ka5"/>
-                        <outlet property="crTitle" destination="o67-Wd-PIJ" id="voQ-Gt-NeH"/>
                         <outlet property="logOutButton" destination="NcI-xG-TUC" id="dot-Qn-mnf"/>
-                        <outlet property="rdAvatar" destination="SXS-HV-GDv" id="WEz-Lt-trp"/>
-                        <outlet property="rdAvatarFrame" destination="z0p-gs-3pl" id="yH9-TE-2bA"/>
-                        <outlet property="rdSocial" destination="Iid-rM-kgV" id="TFt-yR-zkb"/>
-                        <outlet property="rdTitle" destination="fMm-eL-RRO" id="m37-1c-nrh"/>
                         <outlet property="textLabel" destination="n3d-yp-DBd" id="WBf-95-I5c"/>
                     </connections>
                 </viewController>
@@ -727,7 +719,7 @@
     </scenes>
     <resources>
         <image name="MagnifyingGlass_icon.png" width="26" height="26"/>
-        <image name="Signup_bg_v3.png" width="640" height="1136"/>
+        <image name="Signup_bg.png" width="320" height="568"/>
         <image name="avatar_frame.png" width="115" height="115"/>
         <image name="claudio_avatar.png" width="76" height="76"/>
         <image name="follow_bttn.png" width="208" height="62"/>
