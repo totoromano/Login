@@ -51,23 +51,26 @@
 
 -(void)viewDidLayoutSubviews{
     
-//    UIDevice *device = [UIDevice currentDevice];
-//    
-//    switch( device.orientation)
-//    {
-//        case UIDeviceOrientationPortrait:
-//            
-//            break;
-//            
-//        case UIDeviceOrientationLandscapeLeft:
-//        case UIDeviceOrientationLandscapeRight:
-//            
-//            break;
-//            
-//        default:
-//            break;
-//    }
-   // self.ScrollContainer.contentSize = CGSizeMake(320,500 );
+    UIWindow* window = [UIApplication sharedApplication].keyWindow;
+    
+    
+    UIDevice *device = [UIDevice currentDevice];
+    
+    switch( device.orientation)
+    {
+        case UIDeviceOrientationPortrait:
+            
+            break;
+            
+        case UIDeviceOrientationLandscapeLeft:
+        case UIDeviceOrientationLandscapeRight:
+            self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width );
+            break;
+            
+        default:
+            break;
+    }
+
 }
 
 /*

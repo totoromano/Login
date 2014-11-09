@@ -459,6 +459,7 @@
                     <tabBarItem key="tabBarItem" id="mZD-YQ-nvQ"/>
                     <connections>
                         <outlet property="AboutContainer" destination="Mwt-h0-DAM" id="Byd-aI-Iby"/>
+                        <outlet property="ScrollContainer" destination="lG6-WD-QSS" id="qT0-Hv-q9U"/>
                         <outlet property="textLabel" destination="n3d-yp-DBd" id="WBf-95-I5c"/>
                     </connections>
                 </viewController>
