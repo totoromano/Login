@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *noResults;
 -(void)setup;
 -(void) orientationChanged:(NSNotification *)note;
+@property (strong, nonatomic) IBOutlet UIView *headerView;
 
 
 @end
