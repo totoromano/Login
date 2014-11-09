@@ -44,6 +44,7 @@
 //        NSLog(@"School: %s",[[schools objectAtIndex:i][@"Name"] UTF8String]);
 //    }
     [self.tableView reloadData];
+    
 }
 
 - (void)viewDidLoad {
@@ -110,6 +111,9 @@
         cell.name.text = [schools objectAtIndex:indexPath.row][@"Name"];
     }
     
+    cell.followButton.titleLabel.font =  [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0];
+    
+   // [myButton.titleLabel setFont:[UIFont fontWithName:@"Helvetica-Bold" size:13.0]];
     
     cell.followButton.tag = indexPath.row;
     
