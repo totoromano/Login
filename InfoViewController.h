@@ -14,6 +14,5 @@
 @property (strong, nonatomic) IBOutlet UIView *AboutContainer;
 @property (strong, nonatomic) IBOutlet UIScrollView *ScrollContainer;
 
-
 -(void)setup;
 @end
