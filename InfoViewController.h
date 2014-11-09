@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *textLabel;
 @property (strong, nonatomic) IBOutlet UIView *AboutContainer;
 @property (strong, nonatomic) IBOutlet UIScrollView *ScrollContainer;
+@property (strong, nonatomic) IBOutlet UIButton *logOutButton;
 
 -(void)setup;
 @end

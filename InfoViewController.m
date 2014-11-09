@@ -59,12 +59,12 @@
     switch( device.orientation)
     {
         case UIDeviceOrientationPortrait:
-            
+            self.ScrollContainer.contentSize = CGSizeMake(0,0);
             break;
             
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:
-            self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width );
+            self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 100);
             break;
             
         default:
