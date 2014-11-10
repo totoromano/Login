@@ -55,8 +55,11 @@
     [self.view addGestureRecognizer:tap];
     [self.view setBackgroundColor:[UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95]];
     
-    self.searchBox.attributedText =  [[NSAttributedString alloc] initWithString:@"" attributes:@{NSForegroundColorAttributeName: [UIColor colorWithRed:142/255.0 green:142/255.0 blue:147/255.0 alpha:1]}];
-    self.searchBox.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Search" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    UIColor *greySearch = [UIColor colorWithRed:120/255.0 green:122/255.0 blue:126/255.0 alpha:1];
+    UIColor *whiteSearch = [UIColor whiteColor];
+    
+    self.searchBox.attributedText =  [[NSAttributedString alloc] initWithString:@"" attributes:@{NSForegroundColorAttributeName: whiteSearch}];
+    self.searchBox.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Search" attributes:@{NSForegroundColorAttributeName: greySearch}];
     self.searchBox.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
     [self.searchBox addTarget:self action:@selector(textChanged:) forControlEvents:UIControlEventEditingChanged];
     [self.searchBox setDelegate:self];
