@@ -44,7 +44,7 @@
 //        NSLog(@"School: %s",[[schools objectAtIndex:i][@"Name"] UTF8String]);
 //    }
     [self.tableView reloadData];
-    self.headerView.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1];
+    self.headerView.backgroundColor = [UIColor colorWithRed:61/255.0 green:68/255.0 blue:69/255.0 alpha:1];
     
 }
 
