@@ -44,7 +44,7 @@
 //        NSLog(@"School: %s",[[schools objectAtIndex:i][@"Name"] UTF8String]);
 //    }
     [self.tableView reloadData];
-    self.headerView.backgroundColor = [UIColor colorWithRed:61/255.0 green:68/255.0 blue:69/255.0 alpha:1];
+    self.headerView.backgroundColor = [UIColor colorWithRed:59/255.0 green:65/255.0 blue:66/255.0 alpha:1];
     
 }
 
@@ -55,7 +55,7 @@
     [self.view addGestureRecognizer:tap];
     [self.view setBackgroundColor:[UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95]];
     
-    UIColor *greySearch = [UIColor colorWithRed:120/255.0 green:122/255.0 blue:126/255.0 alpha:1];
+    UIColor *greySearch = [UIColor colorWithRed:142/255.0 green:142/255.0 blue:147/255.0 alpha:1];
     UIColor *whiteSearch = [UIColor whiteColor];
     
     self.searchBox.attributedText =  [[NSAttributedString alloc] initWithString:@"" attributes:@{NSForegroundColorAttributeName: whiteSearch}];
