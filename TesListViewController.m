@@ -54,6 +54,7 @@
     [self.view setBackgroundColor:[UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:0.95]];
     self.searchBox.textColor = [UIColor whiteColor];
     self.searchBox.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Search" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    self.searchBox.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:17.0f];
     [self.tableView setBackgroundColor:[UIColor clearColor]];
     [self.tableView setDelegate:self];
     [self.tableView setDataSource:self];
