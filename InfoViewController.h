@@ -16,12 +16,14 @@
 @property (strong, nonatomic) IBOutlet UIButton *logOutButton;
 @property (strong, nonatomic) IBOutlet UIImageView *crAvatar;
 @property (strong, nonatomic) IBOutlet UIImageView *rdAvatar;
-@property (strong, nonatomic) IBOutlet UIImageView *rdAvatarFrame;
-@property (strong, nonatomic) IBOutlet UIImageView *crAvatarFrame;
+//@property (strong, nonatomic) IBOutlet UIImageView *rdAvatarFrame;
+//@property (strong, nonatomic) IBOutlet UIImageView *crAvatarFrame;
 @property (strong, nonatomic) IBOutlet UILabel *crTitle;
 @property (strong, nonatomic) IBOutlet UILabel *crSocial;
 @property (strong, nonatomic) IBOutlet UILabel *rdTitle;
 @property (strong, nonatomic) IBOutlet UILabel *rdSocial;
+@property (strong, nonatomic) IBOutlet UILabel *aboutText;
+@property (strong, nonatomic) IBOutlet UILabel *aboutLabel;
 
 -(void)setup;
 @end

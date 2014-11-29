@@ -23,11 +23,11 @@
     self.view.backgroundColor = [UIColor colorWithRed:44/255.0 green:51/255.0 blue:52/255.0 alpha:1.00];
     int alphaX = 15;
     if([[UIDevice currentDevice]orientation] == UIDeviceOrientationLandscapeLeft || [[UIDevice currentDevice]orientation] == UIDeviceOrientationLandscapeRight){
-        self.crAvatar.frame = CGRectMake(41, self.crAvatar.frame.origin.y, 118, self.crAvatar.frame.size.height);
-        self.crAvatarFrame.frame = CGRectMake(7, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
+        //self.crAvatar.frame = CGRectMake(41, self.crAvatar.frame.origin.y, 118, self.crAvatar.frame.size.height);
+        //self.crAvatarFrame.frame = CGRectMake(7, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
         //NSLog(@"This piece x:%f",self.rdAvatar.frame.origin.x);
-        self.rdAvatar.frame = CGRectMake(362, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
-        self.rdAvatarFrame.frame = CGRectMake(329, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+        //self.rdAvatar.frame = CGRectMake(362, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+        //self.rdAvatarFrame.frame = CGRectMake(329, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
          //NSLog(@"This piece x:%f",self.rdAvatar.frame.origin.x);
     }
     
@@ -45,12 +45,14 @@
 - (void)viewDidLoad {
     NSLog(@"viewDidLoad");
     [super viewDidLoad];
+    needsResetFrame = YES;
     [self setNeedsStatusBarAppearanceUpdate];
     [self orientationChanged:nil];
     // Do any additional setup after loading the view.
    // NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
     //self.textLabel.text = [[[PFUser currentUser] username] UTF8String] ;
    // NSLog(@"username: %s",[[[PFUser currentUser]username] UTF8String]);
+    
     [self setup]; [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(orientationChanged:)
@@ -59,42 +61,56 @@
 }
 - (void) orientationChanged:(NSNotification *)note
 {
-    int alphaX = 15;
+    NSLog(@"Here in OrientationChanged");
     switch ([[UIDevice currentDevice]orientation]) {
         case UIDeviceOrientationPortrait :
+             NSLog(@"portrait Orientation and %hhd", needsResetFrame);
+            needsResetFrame = YES;
+           
             
-            needsResetFrame = NO;
+            self.crAvatar.frame = CGRectMake(19, 151, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+            self.crTitle.frame = CGRectMake(15, 232,self.crTitle.frame.size.width, self.crTitle.frame.size.height);
+            self.crSocial.frame = CGRectMake(15, 271,self.crSocial.frame.size.width, self.crSocial.frame.size.height);
             
-            //NSLog(@"Portrait work here  , x%f", self.crAvatar.frame.origin.x);
-            //41,151,63,64
-           //22,133,100,100
+            self.rdAvatar.frame = CGRectMake(150, 151, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+            self.rdTitle.frame = CGRectMake(163, 232,self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
+            self.rdSocial.frame = CGRectMake(159, 271,self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
             
-            //159,133,100,100
-            //177,151,63,64
-               
-            self.crAvatar.frame = CGRectMake(41, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
-            self.crAvatarFrame.frame = CGRectMake(22, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
-            //NSLog(@"Re-Portrait work here  , x%f", self.crAvatar.frame.origin.x);
-            
-            self.rdAvatar.frame = CGRectMake(177, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
-            self.rdAvatarFrame.frame = CGRectMake(159, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+            self.aboutText.frame = CGRectMake(22, 58, 242,70);
+            self.aboutLabel.frame  = CGRectMake(109, 32, 66,31);
             break;
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:
+            NSLog(@"landscape Orientation and %hhd", needsResetFrame);
             
-            NSLog(@"Now work here %d", [[UIDevice currentDevice]orientation]);
-            NSLog(@"Now work here  x:%f", self.crAvatar.frame.origin.x);
-            if(!needsResetFrame){
-                self.crAvatar.frame = CGRectMake(26, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
-                self.crAvatarFrame.frame = CGRectMake(7, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
-              
+            //NSLog(@"Now work here %ld", [[UIDevice currentDevice]orientation]);
+           // NSLog(@"Now work here  x:%f", self.aboutText.frame.origin.x);
+            
+            if(needsResetFrame){
                 
-                self.rdAvatar.frame = CGRectMake(192, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
-                self.rdAvatarFrame.frame = CGRectMake(174, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
                 
-                needsResetFrame = YES;
+                float x = 284 - 170;
+               // NSLog(@"In here %f", self.view.frame.size.width/2);
+                self.crAvatar.frame = CGRectMake(x-20, 131, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+               // self.crAvatarFrame.frame = CGRectMake(7, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
+                self.crTitle.frame = CGRectMake(x-30, 212,self.crTitle.frame.size.width, self.crTitle.frame.size.height);
+                self.crSocial.frame = CGRectMake(x-30, 251,self.crSocial.frame.size.width, self.crSocial.frame.size.height);
                 
-            NSLog(@"2.Doing work here  , w%f and frame h:%f", self.crAvatar.frame.size.width,self.crAvatarFrame.frame.size.height);
+                self.rdAvatar.frame = CGRectMake(x+300-100, 131, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+              //  self.rdAvatarFrame.frame = CGRectMake(174, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+                self.rdTitle.frame = CGRectMake(x+300-100+10, 212,self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
+                self.rdSocial.frame = CGRectMake(x+300-100+10,251,self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
+                
+                self.aboutText.frame = CGRectMake(x, 58, 300,70);
+                self.aboutLabel.frame  = CGRectMake(284 - self.aboutLabel.frame.size.width/2 -20, 32, 66,31);
+                
+
+               // self.rdAvatar.frame = CGRectMake( 362, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+               // self.rdAvatarFrame.frame = CGRectMake(329, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+                // NSLog(@"Now work here  x:%f", self.aboutText.frame.origin.x);
+                needsResetFrame = NO;
+                
+            //NSLog(@"2.Doing work here  , w%f and frame h:%f", self.crAvatar.frame.size.width,self.crAvatarFrame.frame.size.height);
             }
             break;
         default:
@@ -128,12 +144,13 @@
         case UIDeviceOrientationPortrait:
             self.ScrollContainer.contentSize = CGSizeMake(0,0);
             
-            self.crAvatar.frame = CGRectMake(41, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
-            self.crAvatarFrame.frame = CGRectMake(22, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
+            self.crAvatar.frame = CGRectMake(19, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+            //self.crAvatarFrame.frame = CGRectMake(22, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
             //NSLog(@"Re-Portrait work here  , x%f", self.crAvatar.frame.origin.x);
             
-            self.rdAvatar.frame = CGRectMake(177, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
-            self.rdAvatarFrame.frame = CGRectMake(159, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+            self.rdAvatar.frame = CGRectMake(150, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+           // self.rdAvatarFrame.frame = CGRectMake(159, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
+
             break;
             
         case UIDeviceOrientationLandscapeLeft:
@@ -142,7 +159,7 @@
             self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 100);
             
             [self.ScrollContainer scrollRectToVisible:CGRectMake(0,35, self.ScrollContainer.frame.size.width, self.ScrollContainer.frame.size.height) animated:NO];
-            
+           
         default:
             break;
     }
