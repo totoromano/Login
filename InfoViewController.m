@@ -7,6 +7,7 @@
 //
 
 #import "InfoViewController.h"
+#import "AppDelegate.h"
 #import <Parse/Parse.h>
 
 @interface InfoViewController (){
@@ -60,7 +61,7 @@
      object:[UIDevice currentDevice]];
 }
 - (void) orientationChanged:(NSNotification *)note
-{
+{   AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
     NSLog(@"Here in OrientationChanged");
     switch ([[UIDevice currentDevice]orientation]) {
         case UIDeviceOrientationPortrait :
@@ -90,19 +91,41 @@
                 
                 
                 float x = 284 - 170;
-               // NSLog(@"In here %f", self.view.frame.size.width/2);
-                self.crAvatar.frame = CGRectMake(x-20, 131, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
-               // self.crAvatarFrame.frame = CGRectMake(7, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
-                self.crTitle.frame = CGRectMake(x-30, 212,self.crTitle.frame.size.width, self.crTitle.frame.size.height);
-                self.crSocial.frame = CGRectMake(x-30, 251,self.crSocial.frame.size.width, self.crSocial.frame.size.height);
-                
-                self.rdAvatar.frame = CGRectMake(x+300-100, 131, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
-              //  self.rdAvatarFrame.frame = CGRectMake(174, self.rdAvatarFrame.frame.origin.y, self.rdAvatarFrame.frame.size.width, self.rdAvatarFrame.frame.size.height);
-                self.rdTitle.frame = CGRectMake(x+300-100+10, 212,self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
-                self.rdSocial.frame = CGRectMake(x+300-100+10,251,self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
-                
-                self.aboutText.frame = CGRectMake(x, 58, 300,70);
-                self.aboutLabel.frame  = CGRectMake(284 - self.aboutLabel.frame.size.width/2 -20, 32, 66,31);
+                if ([delegate.phone isEqualToString:@"iphone5"])
+                {
+                    //iphone 5
+
+                    self.crAvatar.frame = CGRectMake(x-20, 131, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+                    self.crTitle.frame = CGRectMake(x-30, 212,self.crTitle.frame.size.width, self.crTitle.frame.size.height);
+                    self.crSocial.frame = CGRectMake(x-30, 251,self.crSocial.frame.size.width, self.crSocial.frame.size.height);
+                    
+                    self.rdAvatar.frame = CGRectMake(x+300-100, 131, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+                    self.rdTitle.frame = CGRectMake(x+300-100+10, 212,self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
+                    self.rdSocial.frame = CGRectMake(x+300-100+10,251,self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
+                    
+                    self.aboutText.frame = CGRectMake(x, 58, 300,70);
+                    self.aboutLabel.frame  = CGRectMake(284 - self.aboutLabel.frame.size.width/2 -20, 32, 66,31);
+
+                    
+                }
+                else if ([[UIScreen mainScreen] bounds].size.height >= 568){
+                    
+                }else{
+                    //iphone 3.5 inch screen iphone 3g,4s
+                    NSLog(@"Number:%f",[[UIScreen mainScreen] bounds].size.height);
+                     x = 240 - 170;
+                    self.crAvatar.frame = CGRectMake(x-20, 131, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
+                    self.crTitle.frame = CGRectMake(x-30, 212,self.crTitle.frame.size.width, self.crTitle.frame.size.height);
+                    self.crSocial.frame = CGRectMake(x-30, 251,self.crSocial.frame.size.width, self.crSocial.frame.size.height);
+                    
+                    self.rdAvatar.frame = CGRectMake(x+300-100, 131, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
+                    self.rdTitle.frame = CGRectMake(x+300-100+10, 212,self.rdTitle.frame.size.width, self.rdTitle.frame.size.height);
+                    self.rdSocial.frame = CGRectMake(x+300-100+10,251,self.rdSocial.frame.size.width, self.rdSocial.frame.size.height);
+                    
+                    self.aboutText.frame = CGRectMake(x, 58, 300,70);
+                    self.aboutLabel.frame  = CGRectMake(240 - self.aboutLabel.frame.size.width/2 -20, 32, 66,31);
+                    
+                }
                 
 
                // self.rdAvatar.frame = CGRectMake( 362, self.rdAvatar.frame.origin.y, self.rdAvatar.frame.size.width, self.rdAvatar.frame.size.height);
@@ -135,14 +158,29 @@
     
     UIWindow* window = [UIApplication sharedApplication].keyWindow;
     
-    
+    AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
     UIDevice *device = [UIDevice currentDevice];
     int alphaX = 15;
     
     switch( device.orientation)
     {
         case UIDeviceOrientationPortrait:
-            self.ScrollContainer.contentSize = CGSizeMake(0,0);
+            
+            if ([delegate.phone isEqualToString:@"iphone5"])
+            {
+                //iphone 5
+                self.ScrollContainer.contentSize = CGSizeMake(0,0);
+
+            }
+            else if ([[UIScreen mainScreen] bounds].size.height >= 568){
+                
+            }else{
+                //iphone 3.5 inch screen iphone 3g,4s
+                 self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.width,window.frame.size.height + 50);
+   
+            }
+
+            //self.ScrollContainer.contentSize = CGSizeMake(0,0);
             
             self.crAvatar.frame = CGRectMake(19, self.crAvatar.frame.origin.y, self.crAvatar.frame.size.width, self.crAvatar.frame.size.height);
             //self.crAvatarFrame.frame = CGRectMake(22, self.crAvatarFrame.frame.origin.y, self.crAvatarFrame.frame.size.width, self.crAvatarFrame.frame.size.height);
@@ -156,7 +194,20 @@
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:
 //            NSLog(@"1.Doing work here  , x%f", self.crAvatar.frame.origin.x);
-            self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 100);
+            if ([delegate.phone isEqualToString:@"iphone5"])
+            {
+                //iphone 5
+                self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 100);
+                
+            }
+            else if ([[UIScreen mainScreen] bounds].size.height >= 568){
+                
+            }else{
+                //iphone 3.5 inch screen iphone 3g,4s
+                self.ScrollContainer.contentSize = CGSizeMake(window.frame.size.height,window.frame.size.width + 180);
+                
+            }
+            
             
             [self.ScrollContainer scrollRectToVisible:CGRectMake(0,35, self.ScrollContainer.frame.size.width, self.ScrollContainer.frame.size.height) animated:NO];
            
